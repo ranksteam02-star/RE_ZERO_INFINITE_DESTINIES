@@ -26,3 +26,5 @@ Pending: Windows export/device QA; Owner playtest เนื้อเรื่อ
 ## 2026-11-08 — Visual Edition 0.4
 
 เพิ่ม standalone export, illustrated title/portraits, playable town, shell/settings/music และ 19 integration checks. รายละเอียดและสถานะปัจจุบันอยู่ใน VISUAL_EDITION_04.md. งานที่ยังไม่เสร็จคือ Windows hardware QA และระบบ RPG ระยะถัดไป
+
+Owner ยืนยันเป้าหมายเล่น 2–3 ชั่วโมง/วัน นาน 7–8 เดือน จัดทำ LONG_TERM_CAMPAIGN.md แยกเป้าหมายจากเนื้อหาที่มีจริง. แนบ release assets ผ่าน uploads.github.com ไม่สำเร็จ (401); จัด binary download ใน branch downloads-v0.4.0 เป็นทางสำรอง.

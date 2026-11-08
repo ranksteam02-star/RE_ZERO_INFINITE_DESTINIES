@@ -2,7 +2,7 @@
 
 **Visual Edition 0.4 · เกมเนื้อเรื่องภาษาไทย · Windows / Linux**
 
-[ดาวน์โหลดเกม Windows](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/releases/download/v0.4.0/InfiniteDestinies-Windows-v0.4.0.zip) · [ดาวน์โหลดเกม Linux](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/releases/download/v0.4.0/InfiniteDestinies-Linux-v0.4.0.zip) · [Releases](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/releases)
+[ดาวน์โหลดเกม Windows](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/raw/refs/heads/downloads-v0.4.0/InfiniteDestinies-Windows-v0.4.0.zip) · [ดาวน์โหลดเกม Linux](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/raw/refs/heads/downloads-v0.4.0/InfiniteDestinies-Linux-v0.4.0.zip) · [Releases](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/releases)
 
 ## เปิดเล่นโดยไม่ต้องติดตั้ง Godot
 
@@ -49,6 +49,10 @@ Windows package เป็น x86-64 สร้างด้วย official Godot 4
 ## ขอบเขตของรุ่นนี้
 
 นี่คือ playable narrative demo พร้อมลานเมืองหนึ่งฉาก ยังไม่มีระบบต่อสู้ การย้อนเวลา แผนที่หลายพื้นที่ หรืออนิเมชันเดินหลายเฟรม. ตัวละครในเมืองเป็นภาพนิ่ง billboard ที่ขยับตาม controller. Save มีหนึ่งช่องพร้อม backup; ยังไม่มี autosave. ตำแหน่งเดินในลานเมืองไม่ถูกบันทึกข้ามการเปิดเกม
+
+## เป้าหมายระยะยาว
+
+Owner ต้องการเล่น 2–3 ชั่วโมงต่อวัน นาน 7–8 เดือน (เป้าหมาย 420–720 ชั่วโมง). รุ่นนี้ยังเป็นบทนำและยังไม่ถึงเป้าหมายนั้น. ดู [แผนขยายเกมและ milestone ถัดไป](docs/LONG_TERM_CAMPAIGN.md)
 
 ## สำหรับผู้พัฒนา
 
