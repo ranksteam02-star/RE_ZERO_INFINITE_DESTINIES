@@ -20,4 +20,4 @@ Godot 4 / GDScript / Windows / Thai / modular data-driven / 2.5D 3D environment 
 
 ## GitHub publication
 
-Owner อนุญาต private repository. Account ที่เชื่อมคือ ranksteam02-star. การสร้าง repository ใหม่ถูก GitHub ปฏิเสธ `Resource not accessible by integration (createRepository)`; ไม่ใช่ auto-review rejection. ไม่อัปโหลดไป repository อื่นที่ไม่เกี่ยวข้อง และไม่เปลี่ยน privacy ของ repository เดิม
+Owner อนุญาตให้เผยแพร่แบบ Public เพื่อให้เพื่อนร่วมพัฒนาได้ โดยเปลี่ยนจากคำขอ Private เดิม. Repository เป้าหมายคือ `ranksteam02-star/RE_ZERO_INFINITE_DESTINIES` ซึ่ง Owner สร้างและเปิดสิทธิ์ให้การเชื่อมต่อแล้ว. ไม่แก้ไข repository ในบัญชี ranksteam01-jpg.

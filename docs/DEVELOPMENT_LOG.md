@@ -19,4 +19,6 @@
 
 ไฟล์ใหม่ทั้งหมดอยู่ใน source project ไม่มีไฟล์โปรเจกต์เดิมให้แก้ทับ. ผลทดสอบสุดท้ายและข้อจำกัดแยกไว้ใน TEST_RESULTS.md
 
-Pending: GitHub private upload หลัง repository ถูกสร้างและ grant access; Windows export/device QA; Owner playtest เนื้อเรื่อง
+Repository เป้าหมายสำหรับส่งมอบ: https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES (Public ตามคำขอล่าสุดของ Owner)
+
+Pending: Windows export/device QA; Owner playtest เนื้อเรื่อง
