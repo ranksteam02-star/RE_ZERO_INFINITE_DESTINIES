@@ -8,3 +8,13 @@
 - ไม่มีเพลง เสียงพูด ภาพจากอนิเมะ หรือ asset ที่ดึงจากเกมต้นฉบับ
 
 ยังไม่ได้กำหนด license แจกจ่าย source ทั้งโปรเจกต์ในนาม Owner. การเก็บ repository private ไม่ได้ให้สิทธิ์เผยแพร่เชิงพาณิชย์โดยอัตโนมัติ ให้ประเมินสิทธิ์ก่อนเผยแพร่ตามข้อกำหนดของ Owner
+
+## Visual Edition 0.4
+
+- `assets/art/twilight_city.png`: AI-generated fantasy canal-town key art สร้างใหม่ใน session นี้
+- `assets/art/characters.png`: AI-generated fan-art atlas ของ Subaru / Emilia; ใช้ AtlasTexture แบ่งช่องภายใน Godot โดยไม่ดึงภาพจากผลงานต้นฉบับ
+- `assets/music/twilight.ogg`: bell/pad motif สังเคราะห์และเรียบเรียงใหม่สำหรับโปรเจกต์ ไม่ใช้ sample จากเพลงอื่น
+- ฉากลานเมือง: geometry/materials ที่สร้างจาก `town_world.gd`
+- Godot Engine runtime: MIT license และ third-party notices รวมอยู่ใน ZIP ของ build
+
+การสร้างภาพใหม่ไม่เปลี่ยนสถานะสิทธิ์ในชื่อและตัวละครจาก Re:Zero; ยังคงเป็นแฟนโปรเจกต์ที่ไม่ใช่งานทางการ

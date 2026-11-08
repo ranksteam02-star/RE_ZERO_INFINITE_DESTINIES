@@ -7,3 +7,4 @@ GODOT_BIN="${GODOT_BIN:-godot}"
 "$GODOT_BIN" --headless --path . res://tests/CampaignRunner.tscn
 "$GODOT_BIN" --headless --path . res://tests/PersistenceRunner.tscn -- --write
 "$GODOT_BIN" --headless --path . res://tests/PersistenceRunner.tscn -- --read
+"$GODOT_BIN" --headless --path . res://tests/VisualEditionRunner.tscn

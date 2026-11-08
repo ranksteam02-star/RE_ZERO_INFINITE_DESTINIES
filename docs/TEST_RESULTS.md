@@ -1,3 +1,5 @@
+> เอกสารพื้นฐานรุ่น 0.3 — สถานะล่าสุดและการเปลี่ยน entry point ดู [Visual Edition 0.4](VISUAL_EDITION_04.md)
+
 # Test Results — Prototype v0.3
 
 ## สภาพแวดล้อมที่รันจริง

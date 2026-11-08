@@ -22,3 +22,7 @@
 Repository เป้าหมายสำหรับส่งมอบ: https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES (Public ตามคำขอล่าสุดของ Owner)
 
 Pending: Windows export/device QA; Owner playtest เนื้อเรื่อง
+
+## 2026-11-08 — Visual Edition 0.4
+
+เพิ่ม standalone export, illustrated title/portraits, playable town, shell/settings/music และ 19 integration checks. รายละเอียดและสถานะปัจจุบันอยู่ใน VISUAL_EDITION_04.md. งานที่ยังไม่เสร็จคือ Windows hardware QA และระบบ RPG ระยะถัดไป

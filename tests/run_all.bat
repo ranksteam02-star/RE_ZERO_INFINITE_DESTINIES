@@ -12,4 +12,6 @@ if errorlevel 1 exit /b 1
 if errorlevel 1 exit /b 1
 "%GODOT_BIN%" --headless --path . res://tests/PersistenceRunner.tscn -- --read
 if errorlevel 1 exit /b 1
+"%GODOT_BIN%" --headless --path . res://tests/VisualEditionRunner.tscn
+if errorlevel 1 exit /b 1
 endlocal

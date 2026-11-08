@@ -18,6 +18,27 @@ func _ready() -> void:
     continue_button.pressed.connect(request_continue)
     # Shape the complete Thai text before revealing glyphs; never slice UTF-8 text.
     dialogue_text.visible_characters_behavior = TextServer.VC_GLYPHS_AUTO
+    portrait.reparent(self)
+    portrait.set_anchors_and_offsets_preset(Control.PRESET_TOP_RIGHT)
+    portrait.anchor_left = 0.56
+    portrait.anchor_right = 0.98
+    portrait.anchor_top = 0.13
+    portrait.anchor_bottom = 1.18
+    portrait.offset_left = 0
+    portrait.offset_right = 0
+    portrait.offset_top = 0
+    portrait.offset_bottom = 0
+    move_child(portrait, 1)
+    var shade := ColorRect.new()
+    var shader := Shader.new()
+    shader.code = "shader_type canvas_item; void fragment(){COLOR=vec4(0.015,0.025,0.06,0.83*(1.0-smoothstep(0.0,0.36,UV.y)));}"
+    var mat := ShaderMaterial.new()
+    mat.shader = shader
+    shade.material = mat
+    shade.mouse_filter = Control.MOUSE_FILTER_IGNORE
+    add_child(shade)
+    shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+    move_child(shade, 1)
     set_process(false)
 
 func show_line(line: Dictionary) -> void:
@@ -48,7 +69,7 @@ func finish_reveal() -> void:
     dialogue_text.visible_characters = -1
     revealing = false
     set_process(false)
-    continue_button.text = "ดำเนินเรื่องต่อ  →  Space / Enter"
+    continue_button.text = "อ่านต่อ   ›   Space / Enter"
 
 func request_continue() -> void:
     if not active:
@@ -65,7 +86,7 @@ func finish_dialogue() -> void:
     continue_button.disabled = true
 
 func _unhandled_key_input(event: InputEvent) -> void:
-    if event.is_action_pressed("ui_accept") and not event.is_echo():
+    if is_visible_in_tree() and event.is_action_pressed("ui_accept") and not event.is_echo():
         request_continue()
         get_viewport().set_input_as_handled()
 

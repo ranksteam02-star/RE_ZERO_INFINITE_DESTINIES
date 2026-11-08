@@ -18,19 +18,23 @@ expand_mode = 1
 stretch_mode = 6
 [node name="Margin" type="MarginContainer" parent="."]
 layout_mode = 1
-anchor_top = 0.55
+anchor_top = 0.65
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 64.0
-offset_right = -64.0
-offset_bottom = -48.0
+offset_left = 100.0
+offset_right = -100.0
+offset_bottom = -35.0
 theme_override_constants/margin_top = 16
 [node name="Layout" type="HBoxContainer" parent="Margin"]
 layout_mode = 2
 theme_override_constants/separation = 28
 [node name="CharacterPortrait" type="TextureRect" parent="Margin/Layout"]
-custom_minimum_size = Vector2(280, 0)
-layout_mode = 2
+layout_mode = 0
+offset_left = 1100.0
+offset_top = -660.0
+offset_right = 1680.0
+offset_bottom = 10.0
+mouse_filter = 2
 expand_mode = 1
 stretch_mode = 5
 [node name="DialoguePanel" type="PanelContainer" parent="Margin/Layout"]
@@ -44,16 +48,16 @@ theme_override_constants/margin_right = 36
 theme_override_constants/margin_bottom = 24
 [node name="Content" type="VBoxContainer" parent="Margin/Layout/DialoguePanel/Padding"]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 10
 [node name="CharacterName" type="Label" parent="Margin/Layout/DialoguePanel/Padding/Content"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.81, 0.73, 0.96, 1)
 theme_override_font_sizes/font_size = 34
 [node name="DialogueText" type="RichTextLabel" parent="Margin/Layout/DialoguePanel/Padding/Content"]
-custom_minimum_size = Vector2(0, 120)
+custom_minimum_size = Vector2(0, 70)
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/normal_font_size = 34
+theme_override_font_sizes/normal_font_size = 31
 bbcode_enabled = false
 scroll_active = true
 [node name="ContinueIndicator" type="Button" parent="Margin/Layout/DialoguePanel/Padding/Content"]

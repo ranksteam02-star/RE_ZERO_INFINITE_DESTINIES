@@ -1,7 +1,8 @@
 config_version=5
 [application]
 config/name="RE:ZERO — INFINITE DESTINIES"
-run/main_scene="res://scenes/main/Main.tscn"
+run/main_scene="res://scenes/main/Game.tscn"
+config/version="0.4.0"
 config/features=PackedStringArray("4.6", "Forward Plus")
 [autoload]
 GameState="*res://scripts/autoload/game_state.gd"
@@ -12,5 +13,6 @@ window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 [rendering]
+renderer/rendering_method.release_compat="gl_compatibility"
 renderer/rendering_method="forward_plus"
 environment/defaults/default_clear_color=Color(0.025, 0.035, 0.07, 1)

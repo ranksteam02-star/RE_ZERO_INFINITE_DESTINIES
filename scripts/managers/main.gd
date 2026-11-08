@@ -1,5 +1,7 @@
 extends Node
 
+signal return_requested(destination: String)
+
 const STORY_PATH := "res://data/stories/chapter_01.json"
 @export_file("*.json") var story_path: String = "res://data/stories/the_thirteenth_bell.json"
 @onready var saves: Node = $SaveManager
@@ -9,6 +11,8 @@ const STORY_PATH := "res://data/stories/chapter_01.json"
 @onready var error_label: Label = $UI/HUD/Top/Rows/ErrorLabel
 
 func _ready() -> void:
+    $UI/HUD/Top/Rows/Tools/TownButton.pressed.connect(func(): return_requested.emit("town"))
+    $UI/HUD/Top/Rows/Tools/MenuButton.pressed.connect(func(): return_requested.emit("menu"))
     story.choices_requested.connect(dialogue.show_choices)
     dialogue.choice_selected.connect(story.choose)
     saves.save_notification.connect(_show_error)
@@ -62,4 +66,4 @@ func _confirm_new_game() -> void:
     $UI/NewGameConfirmation.popup_centered()
 
 func _update_chapter(line: Dictionary) -> void:
-    $UI/HUD/Top/Rows/Subtitle.text = line.get("chapter_title", "บทสนทนาทดสอบ") + "   /   PROTOTYPE 0.3"
+    $UI/HUD/Top/Rows/Subtitle.text = line.get("chapter_title", "บทสนทนาทดสอบ")

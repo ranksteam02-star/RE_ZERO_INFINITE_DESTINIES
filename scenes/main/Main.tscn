@@ -35,22 +35,22 @@ theme = ExtResource("4")
 [node name="Top" type="MarginContainer" parent="UI/HUD"]
 layout_mode = 1
 anchor_right = 1.0
-offset_left = 64.0
-offset_top = 40.0
-offset_right = -64.0
+offset_left = 65.0
+offset_top = 26.0
+offset_right = -65.0
 [node name="Rows" type="VBoxContainer" parent="UI/HUD/Top"]
 layout_mode = 2
 theme_override_constants/separation = 12
 [node name="Title" type="Label" parent="UI/HUD/Top/Rows"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
-text = "RE:ZERO  /  INFINITE DESTINIES"
+theme_override_font_sizes/font_size = 24
+text = "I N F I N I T E   D E S T I N I E S"
 [node name="Subtitle" type="Label" parent="UI/HUD/Top/Rows"]
 layout_mode = 2
 text = "บทที่ 01 · ถนนยามสนธยา   /   PLAYABLE PROTOTYPE 0.2"
 [node name="StatusLabel" type="Label" parent="UI/HUD/Top/Rows"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 20
 [node name="Tools" type="HFlowContainer" parent="UI/HUD/Top/Rows"]
 layout_mode = 2
 theme_override_constants/h_separation = 18
@@ -88,3 +88,10 @@ size = Vector2i(580, 180)
 dialog_text = "ความคืบหน้าที่ยังไม่ได้บันทึกจะหายไป ต้องการเริ่มใหม่หรือไม่?"
 ok_button_text = "เริ่มใหม่"
 cancel_button_text = "ยกเลิก"
+
+[node name="TownButton" type="Button" parent="UI/HUD/Top/Rows/Tools"]
+layout_mode = 2
+text = "ลานเมือง"
+[node name="MenuButton" type="Button" parent="UI/HUD/Top/Rows/Tools"]
+layout_mode = 2
+text = "เมนู"
