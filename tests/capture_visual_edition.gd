@@ -17,6 +17,9 @@ func run() -> void:
     game.show_menu()
     game.settings.show()
     await shot("visual-settings")
+    game.music.stop()
+    game.music.stream = null
+    await create_timer(0.2).timeout
     game.queue_free()
     await process_frame
     quit()

@@ -3,8 +3,8 @@ extends Node3D
 signal interaction_requested
 var active: bool = false
 var player: CharacterBody3D
-var visual: Sprite3D
-var npc: Sprite3D
+var visual: AnimatedSprite3D
+var npc: AnimatedSprite3D
 var camera: Camera3D
 var lamps: Array[OmniLight3D] = []
 var motes: Array[MeshInstance3D] = []
@@ -17,6 +17,7 @@ var materials: Dictionary = {}
 func _ready() -> void:
     _build_environment()
     _build_plaza()
+    _build_details()
     _build_characters()
     _build_camera()
 
@@ -94,14 +95,10 @@ func _build_environment() -> void:
 
 func _build_plaza() -> void:
     box(Vector3(0, -0.35, 0), Vector3(29, 0.7, 25), Color("363f53"), true)
-    # Alternating inset stone tiles; deterministic layout, no external models.
-    for x in range(-13, 14):
-        for z in range(-3, 11):
-            var shade: float = float(posmod(x * 7 + z * 11, 5)) * 0.012
-            box(Vector3(x, 0.012, z), Vector3(0.96, 0.025, 0.96), Color(0.34 + shade, 0.34 + shade, 0.39 + shade))
-    box(Vector3(0, 0.025, -5), Vector3(28, 0.045, 3.2), Color("235e75"))
-    for i in range(18):
-        box(Vector3(-13 + i * 1.5, 0.055, -4.6 - (i % 3) * 0.4), Vector3(0.7, 0.01, 0.025), Color("5d98a4"))
+    var paving := box(Vector3(0, 0.005, 0), Vector3(28, 0.01, 24), Color.WHITE)
+    paving.material_override = shader_material("stone")
+    var canal := box(Vector3(0, 0.025, -5), Vector3(28, 0.045, 3.2), Color.WHITE)
+    canal.material_override = shader_material("water")
     for side in [-1, 1]:
         box(Vector3(side * 8, 0.32, -3.3), Vector3(11, 0.65, 0.22), Color("b4a79b"), true)
         box(Vector3(side * 8, 0.32, -6.7), Vector3(11, 0.65, 0.22), Color("b4a79b"), true)
@@ -114,14 +111,28 @@ func _build_plaza() -> void:
     # Fountain with raised basin, central column and glowing pool.
     cylinder(Vector3(-2.8, 0.12, 0), 2.15, 0.24, Color("9d8e89"))
     cylinder(Vector3(-2.8, 0.38, 0), 1.8, 0.52, Color("a39792"))
-    cylinder(Vector3(-2.8, 0.66, 0), 1.58, 0.04, Color("4d929b"))
+    cylinder(Vector3(-2.8, 0.66, 0), 1.58, 0.04, Color.WHITE).material_override = shader_material("water")
     cylinder(Vector3(-2.8, 1.15, 0), 0.25, 1.1, Color("c6b6a4"))
     cylinder(Vector3(-2.8, 1.7, 0), 0.78, 0.18, Color("c6b6a4"))
-    cylinder(Vector3(-2.8, 1.81, 0), 0.68, 0.04, Color("71bac1"))
+    cylinder(Vector3(-2.8, 1.81, 0), 0.68, 0.04, Color.WHITE).material_override = shader_material("water")
     collider(Vector3(-2.8, 0.5, 0), Vector3(3.7, 1, 3.7))
     for i in range(8):
         var angle: float = i * TAU / 8.0
-        cylinder(Vector3(-2.8 + cos(angle) * 0.6, 1.28, sin(angle) * 0.6), 0.025, 0.85, Color("8cced1"))
+        var spray := CPUParticles3D.new()
+        spray.position = Vector3(-2.8 + cos(angle) * 0.55, 1.84, sin(angle) * 0.55)
+        spray.amount = 32
+        spray.lifetime = 0.8
+        spray.direction = Vector3(cos(angle)*0.7, 0.6, sin(angle)*0.7)
+        spray.spread = 3.0
+        spray.initial_velocity_min = 1.2
+        spray.initial_velocity_max = 1.5
+        spray.gravity = Vector3(0,-4.0,0)
+        var droplet := SphereMesh.new()
+        droplet.radius = 0.018
+        droplet.height = 0.05
+        droplet.material = material(Color("a5e6ed"), true)
+        spray.mesh = droplet
+        add_child(spray)
     var palette := [Color("b59b96"), Color("b1aaa3"), Color("b8a892"), Color("9fa6b7")]
     for i in range(5):
         house(Vector3(-11.5 + i * 5.6, 0, -10), 4.7, 4.4 + (i % 2) * 0.7, palette[i % 4])
@@ -168,7 +179,7 @@ func roof(pos: Vector3, size: Vector3) -> void:
     mesh.size = size
     var instance := MeshInstance3D.new()
     instance.mesh = mesh
-    instance.material_override = material(Color("4a4566"))
+    instance.material_override = shader_material("roof")
     instance.position = pos
     add_child(instance)
 
@@ -201,14 +212,14 @@ func lantern(pos: Vector3) -> void:
     add_child(light)
     lamps.append(light)
 
-func sprite(path: String) -> Sprite3D:
-    var result := Sprite3D.new()
-    result.texture = load(path)
-    result.pixel_size = 0.0028
-    result.billboard = BaseMaterial3D.BILLBOARD_ENABLED
-    result.no_depth_test = false
-    result.shaded = false
-    result.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR
+func shader_material(shader_name: String) -> ShaderMaterial:
+    var result := ShaderMaterial.new()
+    result.shader = load("res://assets/shaders/" + shader_name + ".gdshader")
+    return result
+
+func sprite(path: String) -> AnimatedSprite3D:
+    var result = preload("res://scripts/systems/overworld_actor.gd").new()
+    result.configure(path)
     return result
 
 func _build_characters() -> void:
@@ -222,18 +233,20 @@ func _build_characters() -> void:
     collision.shape = capsule
     collision.position.y = 0.9
     player.add_child(collision)
-    visual = sprite("res://assets/art/subaru.tres")
-    visual.position.y = 1.35
+    visual = sprite("res://assets/art/subaru_motion.png")
+    visual.position.y = 0.85
     player.add_child(visual)
-    npc = sprite("res://assets/art/emilia.tres")
-    npc.position = npc_position + Vector3(0, 1.35, 0)
+    contact_shadow(player, Vector3(0, 0.035, 0))
+    npc = sprite("res://assets/art/emilia_motion.png")
+    npc.position = npc_position + Vector3(0, 0.85, 0)
     add_child(npc)
+    contact_shadow(self, npc_position + Vector3(0, 0.035, 0))
     var label := Label3D.new()
     label.font = load("res://assets/fonts/Sarabun-Regular.ttf")
     label.font_size = 48
     label.text = "เอมิเลีย"
     label.billboard = BaseMaterial3D.BILLBOARD_ENABLED
-    label.position = npc_position + Vector3(0, 3.0, 0)
+    label.position = npc_position + Vector3(0, 2.0, 0)
     label.modulate = Color("f4d9a9")
     add_child(label)
 
@@ -262,10 +275,9 @@ func _physics_process(delta: float) -> void:
     player.velocity.y -= 18.0 * delta
     player.move_and_slide()
     near_npc = player.position.distance_to(npc_position) < 2.4
-    if direction.length() > 0.1:
-        visual.position.y = 1.35 + sin(phase * 11) * 0.035
-    else:
-        visual.position.y = 1.35
+    var actual_velocity := player.get_real_velocity()
+    var screen_velocity := Vector2(actual_velocity.dot(camera.global_basis.x), actual_velocity.dot(camera.global_basis.z))
+    visual.update_motion(screen_velocity if active else Vector2.ZERO)
 
 func _process(delta: float) -> void:
     if not visible:
@@ -282,3 +294,64 @@ func try_interact() -> bool:
         interaction_requested.emit()
         return true
     return false
+
+func _build_details() -> void:
+    for x in [-6.0, 5.5]:
+        cylinder(Vector3(x, 2.1, -2.5), 0.045, 4.2, Color("746049"))
+        var banner := MeshInstance3D.new()
+        var cloth := PlaneMesh.new()
+        cloth.size = Vector2(0.8, 1.5)
+        cloth.orientation = PlaneMesh.FACE_Z
+        cloth.subdivide_width = 12
+        cloth.subdivide_depth = 12
+        banner.mesh = cloth
+        banner.position = Vector3(x + 0.43, 3.2, -2.5)
+        banner.material_override = shader_material("banner")
+        add_child(banner)
+    for side in [-1, 1]:
+        for z in [2.0, 7.0]:
+            var pos := Vector3(side * 9.0, 0, z)
+            cylinder(pos + Vector3(0, 1.1, 0), 0.15, 2.2, Color("66514a"))
+            for j in range(5):
+                var crown := MeshInstance3D.new()
+                var leaf := SphereMesh.new()
+                leaf.radius = 0.8
+                leaf.height = 1.2
+                crown.mesh = leaf
+                crown.position = pos + Vector3(sin(j*2.3)*0.55, 2.5 + j*0.16, cos(j*2.3)*0.5)
+                crown.material_override = material(Color("526f66") if j%2 else Color("75866c"))
+                add_child(crown)
+            for k in range(9):
+                var bloom := cylinder(pos + Vector3(sin(k*2.4)*0.65,0.7,cos(k*2.4)*0.5),0.075,0.07,Color("e2a3bd"))
+                bloom.rotation_degrees.z = 25
+    for i in range(5):
+        var pos := Vector3(-11.5 + i * 5.6, 0, -10)
+        var height: float = 4.4 + (i % 2)*0.7
+        box(pos+Vector3(1.2,height+1.0,-0.6),Vector3(0.5,1.7,0.6),Color("796b70"))
+        for x in [-1.2,1.2]:
+            box(pos+Vector3(x,height-1.6,1.95),Vector3(1.15,0.22,0.4),Color("685453"))
+            for f in range(5):
+                cylinder(pos+Vector3(x-0.42+f*0.21,height-1.4,1.96),0.13,0.18,Color("a58ca9"))
+    for side in [-1,1]:
+        var seat := Vector3(side*5.1,0,6.9)
+        for k in range(3):
+            box(seat+Vector3(0,0.55,k*0.14),Vector3(1.8,0.09,0.12),Color("846451"))
+        box(seat+Vector3(0,0.95,0.4),Vector3(1.8,0.5,0.1),Color("846451"))
+        for x in [-0.65,0.65]:
+            box(seat+Vector3(x,0.25,0.2),Vector3(0.12,0.5,0.4),Color("3a3548"))
+        collider(seat+Vector3(0,0.5,0.2),Vector3(1.8,1.0,0.6))
+
+func contact_shadow(parent: Node3D, pos: Vector3) -> void:
+    var shadow := MeshInstance3D.new()
+    var disc := CylinderMesh.new()
+    disc.top_radius = 0.32
+    disc.bottom_radius = 0.32
+    disc.height = 0.002
+    shadow.mesh = disc
+    var mat := StandardMaterial3D.new()
+    mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+    mat.albedo_color = Color(0.06,0.07,0.12,0.28)
+    mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
+    shadow.material_override = mat
+    shadow.position = pos
+    parent.add_child(shadow)

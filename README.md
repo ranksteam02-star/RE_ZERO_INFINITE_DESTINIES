@@ -1,12 +1,12 @@
 # RE:ZERO — INFINITE DESTINIES
 
-**Visual Edition 0.4 · เกมเนื้อเรื่องภาษาไทย · Windows / Linux**
+**Living Town Edition 0.5 · เกมเนื้อเรื่องภาษาไทย · Windows / Linux**
 
-[ดาวน์โหลดเกม Windows](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/raw/refs/heads/downloads-v0.4.0/InfiniteDestinies-Windows-v0.4.0.zip) · [ดาวน์โหลดเกม Linux](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/raw/refs/heads/downloads-v0.4.0/InfiniteDestinies-Linux-v0.4.0.zip) · [Releases](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/releases)
+[ดาวน์โหลดเกม Windows](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/raw/refs/heads/downloads-v0.5.0/InfiniteDestinies-Windows-v0.5.0.zip) · [ดาวน์โหลดเกม Linux](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/raw/refs/heads/downloads-v0.5.0/InfiniteDestinies-Linux-v0.5.0.zip) · [Releases](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/releases)
 
 ## เปิดเล่นโดยไม่ต้องติดตั้ง Godot
 
-1. ดาวน์โหลด **InfiniteDestinies-Windows-v0.4.0.zip** จาก Releases (อย่าเลือก Source code ถ้าต้องการเล่นทันที)
+1. ดาวน์โหลด **InfiniteDestinies-Windows-v0.5.0.zip** จาก Releases (อย่าเลือก Source code ถ้าต้องการเล่นทันที)
 2. แตก ZIP ทั้งหมด แล้วเปิด **InfiniteDestinies.exe**
 3. เลือก **เริ่มการเดินทาง** เพื่อเดินในลานเมือง หรือ **อ่านเนื้อเรื่องทันที** เพื่อเข้าเรื่อง
 4. กด **บันทึก** ระหว่างอ่าน ก่อนปิดเกม แล้วใช้ **เล่นต่อจากบันทึก** ในครั้งถัดไป
@@ -17,7 +17,18 @@ Windows package เป็น x86-64 สร้างด้วย official Godot 4
 
 ![หน้าเริ่มเกม](docs/design/visual-menu.png)
 
-## สิ่งใหม่ใน 0.4
+## สิ่งใหม่ใน 0.5
+
+- ตัวละครขนาดเล็ก AnimatedSprite3D: ยืน/กะพริบตาและเดินสี่ทิศ พร้อมเฟรมแขนขาแยกจริง
+- พื้นหินสลับแนว หลังคากระเบื้อง ต้นไม้ ม้านั่ง กระถางหน้าต่างและเงาใต้ตัวละคร
+- คลื่นน้ำเคลื่อนไหว ละอองน้ำพุและธงไหว
+- รูปแบบภาพยังเป็น stylized prototype; แผนที่และเนื้อเรื่องเท่าเดิมในรุ่นนี้
+
+![เมืองในเกม](docs/design/visual-town.png)
+
+[คลิปเดินสี่ทิศจากเกมจริง](https://github.com/ranksteam02-star/RE_ZERO_INFINITE_DESTINIES/raw/refs/heads/downloads-v0.5.0/motion-preview.mp4)
+
+## ระบบจาก 0.4
 
 - ภาพเมืองแฟนตาซียามสนธยาและภาพสุบารุ/เอมิเลียที่สร้างขึ้นใหม่สำหรับเกม
 - หน้าเริ่มเกม, เล่นต่อจาก Save, เมนูตั้งค่า และกรอบบทสนทนาใหม่
