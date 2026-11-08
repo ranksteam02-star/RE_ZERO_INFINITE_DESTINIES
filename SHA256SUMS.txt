@@ -1,0 +1,2 @@
+8d8a36a75bddbe1ca92f7f10092b4bc6edeb4303146e32372a68e45159d7d172  InfiniteDestinies-Linux-v0.5.0.zip
+7209da8c0195a874fa3168606b0c2be8d58326e5617028fc8271310c3fdc5523  InfiniteDestinies-Windows-v0.5.0.zip
