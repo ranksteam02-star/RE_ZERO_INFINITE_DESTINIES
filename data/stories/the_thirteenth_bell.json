@@ -1,0 +1,1974 @@
+{
+  "chapter_id": "the_thirteenth_bell",
+  "title": "ระฆังครั้งที่สิบสาม",
+  "start_node": "a1_0",
+  "content_version": 1,
+  "nodes": {
+    "a1_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ระฆังเหนือเมืองหลวงดังขึ้นสิบเอ็ดครั้ง แล้วเสียงครั้งสุดท้ายก็สะดุดกลางอากาศ คนบนถนนหยุดเดินเพียงชั่วพริบตา ก่อนกลับไปต่อราคาสินค้าราวกับไม่มีอะไรเกิดขึ้น มีเพียงชายหนุ่มในชุดแปลกตาที่เงยหน้ามองหอคอยอยู่นานกว่าคนอื่น",
+      "next_node": "a1_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_1": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "เมื่อกี้มันสิบเอ็ดครั้งครึ่งหรือเปล่า? ระฆังที่นี่มีระบบแจ้งเตือนแบตเตอรี่ต่ำด้วยเหรอ… ไม่สิ ประเด็นแรกคือฉันมาอยู่ที่ไหน แล้วทำไมไม่มีใครรู้จักสถานีรถไฟเลยสักคน",
+      "next_node": "a1_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_2": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เด็กหญิงคนหนึ่งกอดห่อผ้าสีน้ำเงินวิ่งผ่านเขาไป รองเท้าข้างซ้ายของเธอหลวมจนเกือบหลุด ด้านหลัง รถเข็นบรรทุกขวดแก้วกำลังไหลลงเนิน คนลากรถพยายามจับเชือกที่ขาด แต่ปลายนิ้วคว้าได้เพียงอากาศ",
+      "next_node": "a1_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_3": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "หลบเข้าข้างทาง! เธอตรงนั้น อย่ายืนขวางล้อรถ ฉันจะหยุดมันเอง แต่ช่วยเรียกคนออกจากทางให้หน่อย ขวดพวกนั้นแตกแล้วจะมีคนบาดเจ็บ",
+      "next_node": "a1_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_4": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "เสียงของเธอทำให้ฉันขยับก่อนคิด แต่เมื่อมองไปที่ตรอกข้างร้าน ฉันเห็นคนสวมเสื้อคลุมดึงเชือกเส้นหนึ่งกลับเข้าไป รถเข็นอาจไม่ได้ไหลลงมาเอง ถ้าตามไปตอนนี้ บางทีฉันอาจรู้ว่าเขาต้องการอะไร",
+      "next_node": "a1_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ระยะห่างระหว่างรถเข็นกับเด็กหญิงเหลือน้อยลง หญิงสาวผมสีเงินยื่นมือไปข้างหน้า เกล็ดน้ำแข็งเริ่มก่อตัวบนพื้น สุบารุมีเวลาเพียงพอสำหรับการตัดสินใจหนึ่งอย่าง และไม่มีใครบอกได้ว่าตัวเลือกใดคือคำตอบที่ถูกต้อง",
+      "next_node": "c1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "c1": {
+      "type": "choice",
+      "text": "รถเข็นกำลังพุ่งเข้าหาคน แต่ผู้ต้องสงสัยกำลังหายเข้าไปในตรอก",
+      "choices": [
+        {
+          "id": "c1_help",
+          "text": "ช่วยเอมิเลียหยุดรถเข็น",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "hp",
+              "amount": -10
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 10
+            },
+            {
+              "type": "story_flag",
+              "key": "helped_emilia",
+              "value": true
+            }
+          ],
+          "next_node": "a1_help_0"
+        },
+        {
+          "id": "c1_observe",
+          "text": "จดจำผู้ต้องสงสัยและเส้นทางหลบหนี",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "knowledge",
+              "amount": 4
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": -5
+            },
+            {
+              "type": "story_flag",
+              "key": "saw_coat",
+              "value": true
+            }
+          ],
+          "next_node": "a1_observe_0"
+        }
+      ]
+    },
+    "a1_help_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "สุบารุจับขอบรถเข็นแล้วกระชากมันออกด้านข้าง แรงสะเทือนแล่นขึ้นถึงหัวไหล่ ขวดหนึ่งแตกเฉียดแขนเขาไป ก่อนล้อทั้งสองจะถูกตรึงไว้ด้วยน้ำแข็ง เสียงปรบมือดังขึ้นห่าง ๆ แต่เขาได้ยินเพียงเสียงหอบของตัวเอง",
+      "next_node": "a1_help_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_help_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "เจ็บมากไหม? ขอบคุณที่ช่วยนะ แต่ครั้งหน้าอย่าเอาตัวเองไปรองรับทั้งคันแบบนั้นสิ… เธอหัวเราะอะไรอยู่ ฉันเป็นห่วงจริง ๆ นะ ยื่นแขนมาให้ดูก่อน",
+      "next_node": "a1_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_observe_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ชายในเสื้อคลุมหายไปหลังประตูร้านร้าง แต่สุบารุจำได้ว่าชายเสื้อมีด้ายสีทองปักเป็นวงกลมไม่สมบูรณ์ เขาเก็บชิ้นเชือกที่ตกอยู่ขึ้นมา กลิ่นน้ำมันกับฝุ่นหินติดปลายนิ้ว เมื่อหันกลับ รถเข็นก็หยุดแล้ว",
+      "next_node": "a1_observe_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_observe_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ทุกคนปลอดภัย… เธอเห็นอะไรในตรอกนั้นหรือ? ฉันไม่คิดว่าเธอจำเป็นต้องเสี่ยงแทนใคร แต่ถ้าจะเดินไปโดยไม่บอกกัน อย่างน้อยเรียกฉันสักคำก็ได้ ฉันไม่รู้ว่าเธอกำลังหนีหรือกำลังช่วย",
+      "next_node": "a1_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_mid_0": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ฉันชื่อสุบารุ เรื่องที่เห็นอาจฟังประหลาดหน่อย แต่มีคนอยู่ข้างรถก่อนเชือกขาด เขาไม่ได้หยิบเงินจากร้าน ไม่ได้หยิบขวด เขาหยิบป้ายไม้ที่แขวนอยู่ด้านหน้าไป",
+      "next_node": "a1_mid_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_mid_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ฉันชื่อเอมิเลีย ป้ายที่ว่าเป็นป้ายทะเบียนร้านเหรอ? เจ้าของรถบอกว่าขนสินค้ามาถนนนี้ทุกวัน แต่พอถามว่าร้านปลายทางชื่ออะไร เขากลับตอบไม่ได้ ทั้งที่เพิ่งออกจากร้านนั้นมาเมื่อเช้า",
+      "next_node": "a1_mid_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_mid_2": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "บนกำแพงหลังรถเข็นมีรอยสี่เหลี่ยมสีซีด หลักฐานว่าป้ายชื่อถูกถอดออกไปไม่นาน ชายขายขนมปังฝั่งตรงข้ามยืนยันว่าไม่เคยมีร้านอยู่ตรงนั้น แต่บนเคาน์เตอร์มีขนมสองถุงที่เขาบอกว่ารอลูกค้าประจำมารับ",
+      "next_node": "a1_mid_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_mid_3": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ถ้าป้ายหายไปอย่างเดียว มันก็ควรเป็นแค่การขโมย แต่ถ้าคนลืมสิ่งที่ป้ายบอกไปด้วย… ฉันอยากพูดว่าเป็นมุกตลกมากกว่าเชื่อนะ เพียงแต่ตอนนี้ไม่มีใครหัวเราะด้วยเลย",
+      "next_node": "a1_mid_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_mid_4": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ฉันก็ได้ยินระฆังสะดุดเหมือนกัน เราลองเริ่มจากเรื่องที่ตรวจสอบได้ก่อนดีไหม ใครเป็นคนทำป้าย ใครดูแลหอระฆัง แล้วเด็กที่วิ่งผ่านไปอยู่ที่ไหน เธออาจเห็นอะไรบางอย่าง",
+      "next_node": "a1_mid_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_mid_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เอมิเลียรอคำตอบโดยไม่เร่งเร้า สุบารุรู้ว่าตนยังไม่เข้าใจกฎของโลกนี้ การยอมรับว่าไม่รู้อาจทำให้เธอไม่ไว้ใจ แต่การอ้างว่ารู้มากกว่าความจริงก็อาจกลายเป็นหนี้ที่ต้องชำระในภายหลัง",
+      "next_node": "c2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "c2": {
+      "type": "choice",
+      "text": "เอมิเลียถามว่าคุณเข้าใจเหตุการณ์นี้แค่ไหน",
+      "choices": [
+        {
+          "id": "c2_honest",
+          "text": "บอกตรง ๆ ว่ายังไม่รู้ และขอให้ช่วยคิดด้วยกัน",
+          "effects": [
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 8
+            },
+            {
+              "type": "story_flag",
+              "key": "shared_uncertainty",
+              "value": true
+            }
+          ],
+          "next_node": "a1_honest_0"
+        },
+        {
+          "id": "c2_confident",
+          "text": "อ้างว่ารู้รูปแบบของเหตุการณ์ เพื่อให้เธอตามมา",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "courage",
+              "amount": 3
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": -4
+            },
+            {
+              "type": "story_flag",
+              "key": "claimed_expertise",
+              "value": true
+            }
+          ],
+          "next_node": "a1_confident_0"
+        }
+      ]
+    },
+    "a1_honest_0": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ไม่รู้ก็พูดว่าไม่รู้ได้ ฉันเองก็ไม่ได้มีคำตอบทุกอย่าง เราไม่จำเป็นต้องผลัดกันทำเป็นคนที่เก่งที่สุดหรอก ขอแค่อย่าปล่อยให้อีกคนต้องเดาอยู่คนเดียวว่าเกิดอะไรขึ้น",
+      "next_node": "a1_honest_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_honest_1": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เธอฉีกกระดาษแผ่นเล็กจากสมุดแล้วเขียนสิ่งที่ทั้งคู่พบลงไป ข้อแรกคือระฆัง ข้อที่สองคือป้ายชื่อ ข้อที่สามคือเด็กหญิงในรองเท้าหลวม ใต้รายการเหล่านั้นยังมีพื้นที่ว่างอีกมาก และความว่างนั้นไม่น่ากลัวเท่าเดิม",
+      "next_node": "a2_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_confident_0": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "มันเป็นรูปแบบที่ฉันเคยเห็นน่ะ เราควรไปหอระฆังก่อน ถ้าพลาดช่วงเวลาไปอาจแก้ไม่ได้—คำพูดออกจากปากเร็วกว่าความคิด และทันทีที่เห็นเธอพยักหน้า ฉันก็อยากดึงมันกลับมา",
+      "next_node": "a1_confident_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a1_confident_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ถ้าเธอรู้อะไร ช่วยบอกฉันให้ชัดด้วยนะ ฉันยินดีเชื่อใจคนที่เพิ่งพบ แต่ไม่อยากให้ความเชื่อนั้นทำให้เราเดินผ่านคนที่กำลังขอความช่วยเหลืออยู่ตรงหน้า",
+      "next_node": "a2_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 01 — ถนนที่ลืมชื่อ"
+    },
+    "a2_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ถนนแคบลงเมื่อเข้าใกล้คลอง ร้านค้าส่งเสียงปิดบานหน้าต่างทีละบาน ทั้งที่ท้องฟ้ายังสว่างอยู่ ป้ายเตือนบนเสาหินเขียนว่าให้กลับบ้านก่อนระฆังยามค่ำ แต่ใต้ข้อความมีรอยขูดคล้ายใครพยายามลบชื่อผู้ประกาศ",
+      "next_node": "a2_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_1": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ดูเหมือนทุกคนเตรียมรับเหตุฉุกเฉิน แต่ไม่มีใครยอมเรียกมันว่าเหตุฉุกเฉินเลย ถ้าถามตรง ๆ เขาก็บอกว่าเป็นธรรมเนียม แล้วทำไมธรรมเนียมต้องมีทหารเฝ้าสะพานด้วยล่ะ",
+      "next_node": "a2_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_2": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "พวกเขาอาจกลัวมากจนไม่อยากพูดถึงก็ได้ ลองฟังก่อนนะ เรามีเรื่องสงสัย แต่คนที่อยู่ที่นี่มีบ้าน มีคนในครอบครัว และมีเหตุผลที่จะไม่ไว้ใจคนแปลกหน้าเหมือนกัน",
+      "next_node": "a2_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_3": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เสียงเคาะดังมาจากใต้สะพาน เด็กหญิงในรองเท้าหลวมยืนอยู่บนคานไม้เหนือประตูระบายน้ำ ห่อผ้าสีน้ำเงินตกลงไปติดเฟือง เธอพยายามใช้กิ่งไม้เขี่ยมัน ทั้งที่กระแสน้ำเริ่มสูงขึ้นรอบข้อเท้า",
+      "next_node": "a2_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_4": {
+      "type": "dialogue",
+      "speaker": "เนริน",
+      "text": "อย่าบอกทหารนะ! เขาจะเก็บของพวกนี้ไป แม่บอกว่าถ้าฉันลืมชื่อใคร ให้ดูในห่อนี้ แต่ตอนนี้ฉัน… ฉันจำไม่ได้แล้วว่ากำลังจะเอามันไปให้ใคร ขออีกนิดเดียว ฉันเกือบเอื้อมถึงแล้ว",
+      "next_node": "a2_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "บนเสาสะพานมีสมุดเวรเปิดทิ้งไว้ หน้าหนึ่งกำลังปลิวหลุด ลายมือในนั้นตรงกับลายมือบนป้ายเตือน เอมิเลียลงไปช่วยเด็กแล้ว สุบารุมองสลับระหว่างบันไดเปียกกับหลักฐานที่อาจถูกลมพัดหาย",
+      "next_node": "c3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "c3": {
+      "type": "choice",
+      "text": "เด็กกับหลักฐานอยู่คนละฝั่งของสะพาน",
+      "choices": [
+        {
+          "id": "c3_child",
+          "text": "ลงไปช่วยเนรินและเก็บห่อผ้า",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "hp",
+              "amount": -8
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 8
+            },
+            {
+              "type": "story_flag",
+              "key": "rescued_nerin",
+              "value": true
+            }
+          ],
+          "next_node": "a2_child_0"
+        },
+        {
+          "id": "c3_ledger",
+          "text": "เก็บหน้าสมุดเวร แล้วเรียกเจ้าหน้าที่มาช่วย",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "knowledge",
+              "amount": 5
+            },
+            {
+              "type": "story_flag",
+              "key": "canal_ledger",
+              "value": true
+            }
+          ],
+          "next_node": "a2_ledger_0"
+        }
+      ]
+    },
+    "a2_child_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "บันไดขั้นสุดท้ายหักทันทีที่สุบารุเหยียบ เขาใช้เข่ารับน้ำหนักแทนและคว้าข้อมือเด็กไว้ได้ เอมิเลียดึงทั้งคู่ขึ้น ส่วนห่อผ้าถูกน้ำแข็งดันออกจากเฟือง ข้างในมีป้ายชื่อไม้เก่าหลายสิบชิ้น ไม่ใช่ของมีค่าในสายตาคนขโมย",
+      "next_node": "a2_child_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_child_1": {
+      "type": "dialogue",
+      "speaker": "เนริน",
+      "text": "แม่บอกว่าชื่อที่ไม่มีใครเรียกจะหนาว ฉันเลยพาพวกเขามาด้วย… พี่จะหัวเราะก็ได้นะ คนอื่นหัวเราะกันหมด แต่พี่อย่าทิ้งห่อนี้ลงน้ำอีกได้ไหม",
+      "next_node": "a2_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_ledger_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "สุบารุเหยียบหน้ากระดาษไว้ก่อนมันจะปลิวลงคลอง ข้อมูลระบุการปิดทางน้ำทุกคืนก่อนเที่ยงคืน พร้อมรายชื่อบ้านที่ถูกย้ายออก เอมิเลียกับเจ้าหน้าที่ช่วยเด็กขึ้นมาได้ แต่ห่อผ้าสีน้ำเงินถูกกระแสน้ำพัดหายไป",
+      "next_node": "a2_ledger_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_ledger_1": {
+      "type": "dialogue",
+      "speaker": "เนริน",
+      "text": "ไม่เป็นไรค่ะ ฉันยังจำได้บางชื่อ… ถ้ารีบพูดก่อนลืมก็น่าจะพอ เนรินหลับตาแล้วเริ่มนับนิ้ว แต่เมื่อถึงนิ้วที่สี่ เธอก็หยุด ไม่ว่าจะพยายามเท่าไร ชื่อถัดไปก็ไม่กลับมา",
+      "next_node": "a2_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_mid_0": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "เราจะไม่สัญญาว่าทำทุกอย่างกลับมาได้ทันทีนะ แต่เราจะพยายามหาว่ามันเกิดอะไรขึ้น เธอมีที่ปลอดภัยให้ไปหรือเปล่า มีใครรออยู่ที่บ้านบ้าง",
+      "next_node": "a2_mid_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_mid_1": {
+      "type": "dialogue",
+      "speaker": "เนริน",
+      "text": "พี่ลิออร่าอยู่ที่หอจดหมายเหตุค่ะ เธอบอกให้ฉันนับเสียงระฆัง ถ้ามันดังสิบสามครั้ง ห้ามเชื่อป้ายถนน ให้ตามเสียงนกหวีดทองแดงกลับไปที่ลานน้ำพุ แต่นกหวีดของเธอหายตั้งแต่เมื่อวาน",
+      "next_node": "a2_mid_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_mid_2": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "สิบสามครั้ง? เมื่อกี้สิบเอ็ดกับอีกครึ่งเดียวเอง ตัวเลขไม่เข้าพวกกันเลย หรือว่าหอระฆังไม่ได้บอกเวลา มันกำลังนับสิ่งที่หายไปอยู่",
+      "next_node": "a2_mid_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_mid_3": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เจ้าหน้าที่สะพานยอมให้พวกเขาดูแผนที่เก่า เขตทางเหนือเคยมีโรงทำกระดาษกับบ้านพักคนงาน แต่บนแผนที่ฉบับใหม่กลายเป็นลานเก็บสินค้า ไม่มีหมายเหตุเรื่องการรื้อถอน และไม่มีเส้นทางย้ายผู้อยู่อาศัย",
+      "next_node": "a2_mid_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_mid_4": {
+      "type": "dialogue",
+      "speaker": "เจ้าหน้าที่",
+      "text": "ผมเซ็นเอกสารว่าตรวจเขตนั้นแล้วทุกสัปดาห์ แต่ถามว่าประตูบ้านสีอะไร ผมกลับตอบไม่ได้ พวกคุณเข้าใจไหม ผมจำลายเซ็นตัวเองได้ แต่จำงานที่ทำไม่ได้เลย",
+      "next_node": "a2_mid_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_mid_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ใต้ปกสมุดมีตั๋วผ่านทางของหอจดหมายเหตุ กับภาพร่างกลไกระฆังที่เขียนด้วยหมึกคนละสี ลิออร่าน่าจะอธิบายได้มากกว่านี้ ทว่าเจ้าหน้าที่เตือนว่าเธอไม่ชอบให้คนแปลกหน้าเปิดเอกสารโดยพลการ",
+      "next_node": "c4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "c4": {
+      "type": "choice",
+      "text": "คุณจะเตรียมตัวก่อนพบลิออร่าอย่างไร?",
+      "choices": [
+        {
+          "id": "c4_study",
+          "text": "อ่านสำเนากลไกและจดสิ่งที่ตรวจสอบได้",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "knowledge",
+              "amount": 4
+            },
+            {
+              "type": "story_flag",
+              "key": "studied_mechanism",
+              "value": true
+            }
+          ],
+          "next_node": "a2_study_0"
+        },
+        {
+          "id": "c4_comfort",
+          "text": "ใช้เวลารับฟังเด็กและชาวบ้านที่จำบ้านตนไม่ได้",
+          "effects": [
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 6
+            },
+            {
+              "type": "player_stat",
+              "key": "mental_stability",
+              "amount": 5
+            },
+            {
+              "type": "story_flag",
+              "key": "heard_witnesses",
+              "value": true
+            }
+          ],
+          "next_node": "a2_comfort_0"
+        }
+      ]
+    },
+    "a2_study_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ภาพร่างไม่ได้ระบุระฆังเป็นแหล่งพลัง แต่เรียกมันว่าเข็มชี้ มีวงแหวนอีกชุดหนึ่งอยู่ใต้เมือง ลายเส้นลากจากบ้านแต่ละหลังเข้าสู่วงแหวนราวกับรากไม้ สุบารุคัดลอกเส้นที่ขาดช่วงลงในสมุดของเอมิเลีย",
+      "next_node": "a2_study_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_study_1": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ถ้าฉันอ่านไม่ผิด การหยุดระฆังอาจไม่ได้หยุดสิ่งที่อยู่ข้างล่าง เราต้องถามเรื่องนี้ก่อนใครคิดจะทุบหอคอยทั้งหลัง… รวมถึงฉันเองด้วย ยอมรับว่าตอนแรกวิธีนั้นดูง่ายดี",
+      "next_node": "a3_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_comfort_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "หญิงชราริมคลองจำชื่อสามีไม่ได้ แต่ยังจำได้ว่าเขาไม่กินหัวหอม เด็กขายดอกไม้ลืมบ้านเกิด แต่ยังผูกช่อดอกไม้แบบที่แม่สอนได้ เอมิเลียจดรายละเอียดเล็ก ๆ เหล่านั้นไว้ทีละเรื่อง แม้ไม่มีช่องในแบบฟอร์มราชการสำหรับมัน",
+      "next_node": "a2_comfort_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a2_comfort_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "บางทีสิ่งที่หายไปอาจไม่ใช่ความทรงจำทั้งหมดนะ ความรู้สึกยังอยู่ นิสัยยังอยู่ ถ้าเราช่วยเก็บสิ่งเหล่านี้ไว้ พวกเขาอาจมีทางตามส่วนที่เหลือกลับมาได้",
+      "next_node": "a3_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 02 — เด็กหญิงกับสะพานน้ำ"
+    },
+    "a3_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "หอจดหมายเหตุตั้งอยู่หลังโบสถ์เล็ก ประตูหน้าถูกล็อก แต่หน้าต่างชั้นล่างเปิดอยู่ครึ่งหนึ่ง กลิ่นกระดาษชื้นกับเปลือกส้มลอยออกมา เด็กสาวสวมถุงมือเปื้อนหมึกยกกองสมุดสูงกว่าศีรษะเดินผ่านช่องหน้าต่างนั้น",
+      "next_node": "a3_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_1": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "ถ้าจะเข้ามาช่วยถือกองนี้ ประตูด้านข้างไม่ได้ล็อก ถ้าจะเข้ามายึดเอกสาร กรุณารอให้ฉันเรียงตามปีก่อน ไม่อย่างนั้นคนที่เดือดร้อนที่สุดก็คงเป็นเจ้าหน้าที่ที่ต้องเขียนรายงานว่าเก็บอะไรไปบ้าง",
+      "next_node": "a3_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_2": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "เราไม่ได้มาจากทางการ เรามาเรื่องเด็กชื่อเนริน ป้ายชื่อที่หายไป แล้วก็ระฆังที่ดูเหมือนจำวิธีทำงานของตัวเองไม่ได้… ฉันควรเรียงคำถามใหม่สินะ",
+      "next_node": "a3_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_3": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "ไม่ต้องหรอก ทั้งหมดเป็นคำถามเดียวกัน เพียงแต่คนส่วนใหญ่ชอบแยกมันออกจากกัน จะได้บอกตัวเองว่าแต่ละเรื่องเล็กเกินกว่าจะต้องรับผิดชอบ เชิญนั่ง แต่อย่านั่งเก้าอี้ตัวที่ไม่มีฝุ่น มันขาหัก",
+      "next_node": "a3_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_4": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "บนโต๊ะมีทะเบียนผู้อยู่อาศัยสามเล่ม ชื่อถนนเหมือนกัน วันที่เหมือนกัน แต่จำนวนครอบครัวต่างกันทุกเล่ม ช่องที่ถูกลบไม่ได้มีรอยหมึกจาง กระดาษตรงนั้นเรียบสะอาดราวกับไม่เคยมีตัวอักษรอยู่มาก่อน",
+      "next_node": "a3_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_5": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ทำไมต้องเก็บฉบับที่ไม่ตรงกันไว้ทั้งหมด? ถ้าเป็นข้อผิดพลาดธรรมดา ก็น่าจะมีเอกสารแก้ไขสักฉบับ แต่เธอเอาเชือกผูกแต่ละเล่มแยกกัน เหมือนกลัวว่ามันจะเปลี่ยนตามกัน",
+      "next_node": "c5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "c5": {
+      "type": "choice",
+      "text": "ลิออร่าขอดูสิ่งที่คุณเก็บมา เพื่อเปรียบเทียบกับทะเบียน",
+      "choices": [
+        {
+          "id": "c5_share",
+          "text": "ให้เธอตรวจข้อมูลทั้งหมดต่อหน้าเอมิเลีย",
+          "effects": [
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 6
+            },
+            {
+              "type": "player_stat",
+              "key": "knowledge",
+              "amount": 3
+            },
+            {
+              "type": "story_flag",
+              "key": "shared_records",
+              "value": true
+            }
+          ],
+          "next_node": "a3_share_0"
+        },
+        {
+          "id": "c5_hide",
+          "text": "เก็บส่วนสำคัญไว้กับตัวและถามเธอทีละเรื่อง",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "knowledge",
+              "amount": 2
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": -3
+            },
+            {
+              "type": "story_flag",
+              "key": "withheld_records",
+              "value": true
+            }
+          ],
+          "next_node": "a3_hide_0"
+        }
+      ]
+    },
+    "a3_share_0": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "รอยน้ำมันนี้มาจากห้องกลไกใต้หอระฆัง และด้ายสีทองใช้เย็บเครื่องแบบช่างบำรุง แต่ฉันยังบอกไม่ได้ว่าใครเป็นคนทำ ดูวันที่ในสมุดนี่สิ คำสั่งปิดทางน้ำเขียนก่อนเกิดอุบัติเหตุสามวัน",
+      "next_node": "a3_share_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_share_1": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เมื่อหลักฐานวางอยู่บนโต๊ะเดียวกัน ช่องว่างระหว่างมันเริ่มกลายเป็นรูปทรง เอมิเลียย้ายเก้าอี้มาใกล้สุบารุอีกนิด ไม่ใช่เพราะต้องการมองกระดาษชัดขึ้น แต่เพราะไม่มีอะไรถูกซ่อนไว้ใต้โต๊ะแล้ว",
+      "next_node": "a3_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_hide_0": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "เธอถามเรื่องน้ำมันก่อนฉันพูดถึงห้องกลไก แปลว่าเธอมีหลักฐานมากกว่าที่วางตรงหน้า ไม่เป็นไร ฉันไม่ขอให้เชื่อใจทันที แต่อย่าเอาคำตอบจากครึ่งเดียวของเรื่องไปตัดสินคนทั้งคนก็แล้วกัน",
+      "next_node": "a3_hide_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_hide_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ฉันยืนอยู่ข้างเธอมาตลอดทางนะ ถ้ามีเหตุผลที่ยังบอกไม่ได้ ช่วยบอกว่ามีเหตุผลก็พอ การต้องคอยสังเกตว่าเธอซ่อนอะไรอยู่ทำให้ฉันฟังคนที่ขอความช่วยเหลือได้ไม่เต็มที่",
+      "next_node": "a3_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_mid_0": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "เมื่อหลายปีก่อนเขตทางเหนือเกิดเพลิงไหม้ เมืองสร้างวงแหวนเวทเพื่อเก็บสำเนาทะเบียนไว้นอกอาคาร ความตั้งใจแรกคือป้องกันการสูญเสียชื่อผู้คน แต่คนออกแบบทำให้ระบบจำได้มากกว่าตัวอักษร",
+      "next_node": "a3_mid_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_mid_1": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "มันจำความทรงจำของคนด้วย? เดี๋ยวนะ ถ้าทะเบียนกับคนเชื่อมกัน การลบชื่อจากสำเนาก็อาจลากบางอย่างออกจากหัวเจ้าของชื่อ แล้วใครยอมอนุมัติเครื่องแบบนั้นกัน",
+      "next_node": "a3_mid_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_mid_2": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "คนที่กลัวไฟไหม้ครั้งต่อไป และคนที่สัญญาว่าจะใช้มันเฉพาะยามจำเป็น ไม่มีใครเขียนไว้ในสัญญาว่า ถ้าวันหนึ่งความจำเป็นกลายเป็นข้ออ้าง ใครจะเป็นคนหยุดระบบ",
+      "next_node": "a3_mid_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_mid_3": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ลิออร่าเปิดลิ้นชักที่บุผ้าไว้ ภายในมีวงแหวนทองเหลืองขนาดเท่าฝ่ามือกับจดหมายที่ยังไม่ได้ส่ง ชื่อผู้รับคือออร์เวน ผู้ดูแลหอระฆัง ส่วนผู้เขียนเป็นอดีตอาจารย์ของเธอที่หายตัวไปจากทะเบียนเมือง",
+      "next_node": "a3_mid_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_mid_4": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ออร์เวนพยายามปกป้องใครอยู่หรือเปล่า? การรู้เหตุผลไม่ได้ทำให้สิ่งที่เกิดขึ้นถูกต้อง แต่ถ้าเราเข้าไปโดยคิดว่าเขาเป็นแค่คนร้าย เขาอาจไม่มีเหตุผลเหลือให้ฟังเราเลย",
+      "next_node": "a3_mid_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_mid_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "นอกหน้าต่าง แสงยามเย็นเปลี่ยนเป็นสีหมึก มีคนเคาะประตูสามครั้งแล้วหยุด ลิออร่าขอให้ทุกคนเงียบ เธอจำจังหวะเคาะนั้นได้ แต่ไม่แน่ใจว่าคนที่อยู่ข้างนอกยังจำเธอได้หรือไม่",
+      "next_node": "c6",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "c6": {
+      "type": "choice",
+      "text": "ผู้ดูแลหอระฆังมาถึงแล้ว คุณจะเริ่มคุยอย่างไร?",
+      "choices": [
+        {
+          "id": "c6_listen",
+          "text": "ให้เขาเล่าเหตุผลก่อน โดยวางหลักฐานไว้ตรงกลาง",
+          "effects": [
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 6
+            },
+            {
+              "type": "player_stat",
+              "key": "knowledge",
+              "amount": 3
+            },
+            {
+              "type": "story_flag",
+              "key": "heard_orwen",
+              "value": true
+            }
+          ],
+          "next_node": "a3_listen_0"
+        },
+        {
+          "id": "c6_accuse",
+          "text": "ชี้ว่าคำสั่งของเขาทำให้คนสูญเสียความทรงจำ",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "courage",
+              "amount": 5
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": -4
+            },
+            {
+              "type": "story_flag",
+              "key": "challenged_orwen",
+              "value": true
+            }
+          ],
+          "next_node": "a3_accuse_0"
+        }
+      ]
+    },
+    "a3_listen_0": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "ผมไม่ได้มาเอาเอกสารคืน ผมมาขอให้ลิออร่าออกจากเขตนี้ก่อนเที่ยงคืน วงแหวนรับชื่อมากเกินไปแล้ว ถ้าผมหยุดมันตอนนี้ ความทรงจำที่ขัดกันจะย้อนเข้าหาคนทั้งเมืองพร้อมกัน",
+      "next_node": "a3_listen_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_listen_1": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "คุณพูดเหมือนปัญหาเป็นแค่เครื่องจักร แต่แม่ของเนรินไม่ได้ยินชื่อลูกตัวเองมาสามวันแล้ว เราต้องรู้ว่ามีใครอยู่ในระบบบ้าง ไม่ใช่แค่รู้ว่าเฟืองตัวไหนกำลังร้อน",
+      "next_node": "a4_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_accuse_0": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "ถ้าการหาคนผิดทำให้คืนนี้ผ่านไปได้ ผมจะยืนให้คุณชี้หน้าจนเช้า แต่สิ่งที่อยู่ใต้เมืองจะไม่หยุดเพียงเพราะคุณรู้สึกว่าตัวเองอยู่ฝ่ายถูก ผมมีเวลาไม่มาก และคนที่หายไปก็เช่นกัน",
+      "next_node": "a3_accuse_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a3_accuse_1": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ลิออร่าก้าวมาขวางก่อนคำโต้เถียงจะดังขึ้น เธอไม่ปกป้องออร์เวน แต่ยืนยันให้เขาวางกุญแจหอคอยไว้บนโต๊ะ เป็นครั้งแรกที่เขาไม่ทำตามทันที มือของชายชรากำกุญแจแน่นจนข้อนิ้วซีด",
+      "next_node": "a4_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 03 — หอจดหมายเหตุที่ไม่มีหน้าสุดท้าย"
+    },
+    "a4_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ออร์เวนพาทุกคนลงบันไดหลังหอคอย อากาศเย็นลงทุกขั้น ผนังหินมีชื่อคนสลักอยู่เป็นแถว บางชื่อสว่างเพียงเล็กน้อย บางชื่อดับสนิท เมื่อสุบารุเผลอแตะชื่อหนึ่ง เขาได้กลิ่นขนมอบจากครัวที่ไม่เคยเห็น",
+      "next_node": "a4_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_1": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "สำเนาความทรงจำไม่ได้อยู่เงียบ ๆ เหมือนหนังสือ มันพยายามหาคนที่เป็นเจ้าของ ถ้าหาไม่พบ มันก็ยืมคนที่อยู่ใกล้ที่สุด ผมจึงต้องปิดถนนก่อนเสียงระฆังสุดท้ายทุกคืน",
+      "next_node": "a4_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_2": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "แล้วทำไมไม่บอกทุกคน? คนอาจกลัว แต่การไม่รู้ทำให้พวกเขาเดินเข้ามาโดยไม่มีทางป้องกันตัว เด็กคนหนึ่งลงไปถึงประตูระบายน้ำเพราะพยายามรักษาชื่อที่ผู้ใหญ่ปล่อยทิ้งไว้",
+      "next_node": "a4_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_3": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "เพราะถ้าเปิดเผยเรื่องนี้ สภาจะสั่งทำลายวงแหวน และรายชื่อของคนที่สูญหายไปในไฟไหม้จะหายไปด้วย ผมใช้เวลาหลายปีรวบรวมพวกเขากลับมา… ผมยังไม่พร้อมยอมรับว่านั่นอาจเป็นสิ่งที่ควรทำ",
+      "next_node": "a4_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_4": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "การรอให้พร้อมอาจทำให้คนที่ยังอยู่กลายเป็นรายชื่อเพิ่มอีกนะ ฉันไม่รู้ว่าจะรู้สึกยังไงถ้าเป็นคุณ แต่ฉันเห็นคนที่ต้องจ่ายค่าการรอของคุณอยู่ข้างบนแล้ว",
+      "next_node": "a4_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "หลังประตูทองเหลืองมีช่องใส่วงแหวนพกพาสองช่อง ช่องหนึ่งเชื่อมกับทะเบียนกลาง อีกช่องเชื่อมกับลำโพงตามถนน ลิออร่าบอกว่าพวกเขาสามารถประกาศเตือนเมือง หรือใช้เวลาที่เหลือตรวจจุดเชื่อมต่อให้แน่ใจก่อน",
+      "next_node": "c7",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "c7": {
+      "type": "choice",
+      "text": "เหลือเวลาก่อนระฆังสุดท้ายไม่มาก คุณจะใช้ช่องสัญญาณอย่างไร?",
+      "choices": [
+        {
+          "id": "c7_warn",
+          "text": "แจ้งชาวเมืองและเริ่มอพยพทันที",
+          "effects": [
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 5
+            },
+            {
+              "type": "story_flag",
+              "key": "warned_city",
+              "value": true
+            }
+          ],
+          "next_node": "a4_warn_0"
+        },
+        {
+          "id": "c7_map",
+          "text": "ตรวจวงจรเพื่อหาวิธีคืนความทรงจำอย่างปลอดภัย",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "knowledge",
+              "amount": 5
+            },
+            {
+              "type": "story_flag",
+              "key": "mapped_network",
+              "value": true
+            }
+          ],
+          "next_node": "a4_map_0"
+        }
+      ]
+    },
+    "a4_warn_0": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ทุกคนที่ได้ยิน โปรดออกจากถนนริมคลองและรวมตัวที่ลานน้ำพุ พาคนข้างตัวไปด้วย หากใครจำชื่อบ้านไม่ได้ ไม่ต้องเสียเวลาหามัน ให้ถามคนที่อยู่ใกล้ที่สุดแล้วเดินต่อ เราจะอยู่ที่นี่จนกว่าทางออกจะปลอดภัย",
+      "next_node": "a4_warn_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_warn_1": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เสียงตอบรับดังมาตามท่อสื่อสารอย่างกระจัดกระจาย มีคนไม่เชื่อ มีคนถามซ้ำ แต่ร้านขนมปังเริ่มแจกตะเกียง และเจ้าหน้าที่สะพานเริ่มรื้อแผงกั้นที่ตัวเองเพิ่งตั้งไว้ การเตือนทำให้เมืองวุ่นวาย ทว่าครั้งนี้ความวุ่นวายมีทิศทาง",
+      "next_node": "nerin_check",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_map_0": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "วงจรนี้ไม่ได้ต้องการให้ชื่อกลับพร้อมกัน เราสามารถแบ่งมันเป็นกลุ่มตามพยานที่ยังจำได้ ถ้ามีคนหลายคนยืนยันความทรงจำเดียวกัน ระบบจะรู้ว่าต้องส่งมันกลับไปหาใคร แต่เราต้องกระจายทะเบียนออกไปก่อน",
+      "next_node": "a4_map_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_map_1": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "สุบารุจดตำแหน่งวาล์วทั้งสี่ลงบนหลังมือ เวลาแต่ละนาทีมีประโยชน์ แต่จากช่องอากาศด้านบนยังมีเสียงคนเดินอยู่ เขาไม่แน่ใจว่าความรู้ที่เพิ่มขึ้นจะชดเชยเวลาที่คนเหล่านั้นไม่ได้รับคำเตือนได้หรือไม่",
+      "next_node": "nerin_check",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "nerin_check": {
+      "type": "condition",
+      "condition": {
+        "type": "flag",
+        "key": "rescued_nerin",
+        "value": true
+      },
+      "if_true": "a4_nerin_saved_0",
+      "if_false": "a4_nerin_lost_0"
+    },
+    "a4_nerin_saved_0": {
+      "type": "dialogue",
+      "speaker": "เนริน",
+      "text": "พี่สุบารุ! ฉันไม่ได้ตามลงมาเล่นนะ ฉันเอาป้ายที่ช่วยไว้ไปให้คนบนลานดู มีคนจำชื่อพวกนั้นได้ด้วย เขาบอกว่าจะเรียกพร้อมกันถ้าเราให้สัญญาณ ฉันเลยยืมนกหวีดจากเจ้าหน้าที่มาแล้ว",
+      "next_node": "a4_nerin_saved_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_nerin_saved_1": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เนรินวางป้ายไม้ชิ้นหนึ่งในมือสุบารุ ด้านหลังมีรอยเล็บที่เขาฝากไว้ตอนดึงมันจากน้ำ การตัดสินใจริมสะพานกลับมาหาเขาในรูปของคนที่พร้อมช่วย โดยไม่ต้องมีคำสั่งจากใคร",
+      "next_node": "a4_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_nerin_lost_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เจ้าหน้าที่พาเนรินมาถึงทางลง เธอกอดกระดาษที่เขียนชื่อได้เพียงสามชื่อ ลิออร่าย่อตัวลงอ่านแล้วบอกว่าเท่านี้ก็มีค่า เด็กหญิงพยักหน้า แต่ยังคงมองไปทางคลองราวกับรอให้ห่อผ้าลอยย้อนกลับมา",
+      "next_node": "a4_nerin_lost_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_nerin_lost_1": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ฉันยังมีหน้าสมุดที่เก็บได้ หลักฐานนั้นช่วยให้เรามาถึงที่นี่ แต่มันไม่ทำให้แววตาของเด็กตรงหน้าหายเจ็บปวด ฉันอยากมีมือมากกว่าสองข้างในวันนั้น ทั้งที่รู้ว่าความคิดแบบนั้นไม่ได้เปลี่ยนสิ่งที่เลือกไปแล้ว",
+      "next_node": "a4_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_mid_0": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "ตอนนี้เรามีสองงาน งานแรกคือให้คนข้างบนรู้ว่าจะช่วยกันยังไง งานที่สองคือหยุดระบบไม่ให้ดึงชื่อใหม่เข้ามา เราใช้คนคนเดียวทำทั้งสองอย่างไม่ได้ ไม่ว่าเขาจะพยายามแค่ไหนก็ตาม",
+      "next_node": "a4_mid_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_mid_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ฉันดูแลทางออกกับผู้คนได้ เธออยู่กับลิออร่าแล้วตรวจกลไก แต่ถ้ามีอะไรเปลี่ยน ขอให้บอกฉันทันทีนะ อย่าเลือกแทนฉันว่าฉันควรรู้เรื่องไหนหรือไม่ควรกังวลเรื่องอะไร",
+      "next_node": "a4_mid_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_mid_2": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "คำขอนั้นง่ายกว่าการต่อสู้กับสัตว์ประหลาด แต่ทำไมถึงตอบยากกว่า ฉันอยากเป็นคนที่ช่วยทุกคนได้โดยไม่ต้องขออะไรตอบแทน ทว่าบางทีสิ่งที่ฉันกำลังหลบเลี่ยงก็คือการยอมให้ใครเห็นว่าตัวเองกลัว",
+      "next_node": "a4_mid_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_mid_3": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "ผมเคยบอกตัวเองว่าถ้ารับภาระไว้คนเดียว คนอื่นจะได้ไม่ต้องทรมาน สุดท้ายผมกลับใช้คำนั้นเป็นเหตุผลไม่ฟังใคร อย่าถือว่าความเหนื่อยของตัวเองเป็นหลักฐานว่าต้องทำถูกเสมอไป",
+      "next_node": "a4_mid_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_mid_4": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "จากผนังหิน เสียงคนหลายสิบคนเริ่มเรียกหากัน ชื่อที่ดับไปกลับติดขึ้นเป็นแสงสีแดง วงแหวนไม่ได้รอการตัดสินใจของพวกเขาอีกแล้ว ลิออร่าถามว่าใครจะถือกุญแจควบคุมสำรอง",
+      "next_node": "a4_mid_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_mid_5": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ถ้าฉันเก็บไว้เอง ฉันจะเปลี่ยนแผนได้ทันที แต่ถ้าฉันจำสิ่งที่กำลังทำไม่ได้ล่ะ? ถ้ามีใครต้องหยุดฉัน คนคนนั้นก็ควรมีอะไรอยู่ในมือมากกว่าคำขอร้อง",
+      "next_node": "c8",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "c8": {
+      "type": "choice",
+      "text": "คุณจะมอบกุญแจสำรองให้ใคร?",
+      "choices": [
+        {
+          "id": "c8_emilia",
+          "text": "ให้เอมิเลีย พร้อมบอกให้หยุดคุณได้หากจำเป็น",
+          "effects": [
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 10
+            },
+            {
+              "type": "story_flag",
+              "key": "shared_key",
+              "value": true
+            }
+          ],
+          "next_node": "a4_key_0"
+        },
+        {
+          "id": "c8_self",
+          "text": "เก็บกุญแจทั้งสองไว้เพื่อควบคุมแผนด้วยตัวเอง",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "courage",
+              "amount": 4
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": -7
+            },
+            {
+              "type": "story_flag",
+              "key": "kept_keys",
+              "value": true
+            }
+          ],
+          "next_node": "a4_self_0"
+        }
+      ]
+    },
+    "a4_key_0": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ฉันรับไว้นะ แต่ไม่ใช่เพราะคิดว่าเธอต้องล้มเหลว มันหมายความว่าถ้าใครคนหนึ่งไปต่อไม่ไหว อีกคนจะรับช่วงได้ เธอก็ทำแบบเดียวกันกับฉันได้ ไม่ต้องขออนุญาตก่อนช่วยฉันหรอก",
+      "next_node": "a4_key_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_key_1": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "กุญแจทองเหลืองหายไปในฝ่ามือเธอ ความหนักที่เหลืออยู่ในมือสุบารุเบาลงเพียงเล็กน้อย แต่เขาสังเกตว่าตัวเองหายใจได้ลึกขึ้นเป็นครั้งแรกตั้งแต่เสียงระฆังเริ่มผิดจังหวะ",
+      "next_node": "a5_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_self_0": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ฉันจำตำแหน่งวงจรได้ ให้ฉันถือไว้จะเร็วกว่า ถ้าต้องเปลี่ยนแผนจะได้ไม่เสียเวลาส่งของกัน คำอธิบายนั้นมีเหตุผลพอสมควร จนกระทั่งฉันเห็นเอมิเลียเก็บมือที่ยื่นมารับกุญแจกลับไปเงียบ ๆ",
+      "next_node": "a4_self_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a4_self_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ได้ แต่กุญแจไม่ได้ทำให้คนถือมองเห็นทุกอย่างนะ ฉันจะยังเรียกเธอถ้าเห็นอันตราย ขอเพียงเธอยังยอมฟังเสียงฉัน แม้ตอนนั้นมันจะขัดกับแผนที่เธอเชื่ออยู่ก็ตาม",
+      "next_node": "a5_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 04 — สัญญาใต้หอคอย"
+    },
+    "a5_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ลานน้ำพุเต็มไปด้วยคนที่ถือสิ่งของแปลกตาแทนสัมภาระ ช้อนบิ่น ผ้ากันเปื้อน กุญแจที่ไม่รู้ว่าเปิดประตูไหน สิ่งเหล่านั้นไม่มีราคาในตลาด แต่เป็นหลักฐานว่าชีวิตของแต่ละคนเคยเชื่อมกับชีวิตของใครอีกคน",
+      "next_node": "a5_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_1": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "ฉันคัดทะเบียนกลางออกมาได้บางส่วน ถ้าแจกสำเนาให้คนช่วยกันตรวจ เราอาจแยกความทรงจำที่เป็นของจริงออกจากสำเนาผิดพลาดได้ แต่หลังจากนั้นจะไม่มีใครควบคุมได้ว่าข้อมูลเรื่องหอระฆังจะไปถึงไหน",
+      "next_node": "a5_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_2": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "ชื่อในนั้นมีทั้งผู้เสียชีวิต ผู้สูญหาย และคนที่ทางการเคยประกาศว่าไม่อยู่ในเขตเพลิงไหม้ ถ้าเปิดเผย เอกสารหลายปีจะถูกตั้งคำถาม ครอบครัวบางบ้านอาจต้องรู้ว่าความจริงที่ได้รับไม่เคยครบถ้วน",
+      "next_node": "a5_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_3": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ฟังดูเหมือนเหตุผลที่ต้องให้พวกเขารู้ มากกว่าเหตุผลที่ควรเก็บไว้ แต่การรู้ตอนกำลังหนีอันตรายอาจทำให้บางคนหันกลับไปหาบ้านที่ไม่มีอยู่แล้ว เราควรเตรียมคนคอยอธิบายด้วย",
+      "next_node": "a5_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_4": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ความจริงกับความปลอดภัยไม่ควรถูกบังคับให้เลือกเพียงอย่างเดียว แต่เวลาเรามีจำกัดจริง ๆ ถ้าเธออยากเผยแพร่ เราจะแบ่งคนดูแลทีละกลุ่ม ถ้ายังไม่เผยแพร่ ก็ต้องมีคำตอบว่าเมื่อไร และใครเป็นคนตัดสิน",
+      "next_node": "a5_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ลิออร่าวางสำเนาสองกองไว้บนพื้น กองหนึ่งพร้อมแจก อีกกองพร้อมผนึกส่งสภา เธอไม่แตะกองใดจนกว่าสุบารุจะตอบ ความเงียบครั้งนี้ไม่ได้มาจากการลืม แต่มาจากการที่ทุกคนรู้ว่าความจริงจะเปลี่ยนบางอย่างถาวร",
+      "next_node": "c9",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "c9": {
+      "type": "choice",
+      "text": "ทะเบียนที่พบจะถูกจัดการอย่างไร?",
+      "choices": [
+        {
+          "id": "c9_public",
+          "text": "แจกสำเนาและให้หลายคนช่วยยืนยันข้อมูล",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "knowledge",
+              "amount": 4
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 4
+            },
+            {
+              "type": "story_flag",
+              "key": "distributed_records",
+              "value": true
+            }
+          ],
+          "next_node": "a5_public_0"
+        },
+        {
+          "id": "c9_sealed",
+          "text": "ผนึกต้นฉบับไว้ตรวจสอบภายหลัง ลดความตื่นตระหนก",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "mental_stability",
+              "amount": 8
+            },
+            {
+              "type": "story_flag",
+              "key": "sealed_records",
+              "value": true
+            }
+          ],
+          "next_node": "a5_sealed_0"
+        }
+      ]
+    },
+    "a5_public_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ไม่มีเสียงโห่ร้องเมื่อกระดาษถูกแจก มีแต่คนอ่านซ้ำ บางคนถามสะกดชื่อ บางคนวางกระดาษลงแล้วเดินไปหาคนที่ยืนอีกมุมหนึ่งของลาน ความทรงจำไม่ได้กลับมาเหมือนแสงสว่าง แต่กลับมาเหมือนบทสนทนาที่หยุดไปนาน",
+      "next_node": "a5_public_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_public_1": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "ตรงนี้มีพยานสองคนจำคืนเดียวกันได้ไม่เหมือนกัน แต่ทั้งคู่จำว่ามีรถม้าสีน้ำตาล เราเริ่มจากสิ่งที่ตรงกันก่อน แล้วเก็บส่วนที่ยังขัดกันไว้ อย่ารีบลบเสียงใครเพียงเพราะมันไม่เข้ากับแบบฟอร์ม",
+      "next_node": "a5_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_sealed_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ลิออร่าผูกเชือกรอบต้นฉบับแล้วให้เอมิเลียลงชื่อเป็นพยาน ผู้คนยังได้รับคำสั่งอพยพ แต่ไม่มีรายชื่อให้ใช้ยืนยันกัน แสงบนผนังหอคอยจึงยังเต้นไม่เป็นจังหวะ ราวกับมีคนหลายคนพูดผ่านประตูที่ปิดอยู่",
+      "next_node": "a5_sealed_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_sealed_1": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "อย่างน้อยครั้งนี้ไม่ได้มีผมคนเดียวที่ถือเอกสารไว้ สุบารุไม่แน่ใจว่าประโยคนั้นเป็นคำขอบคุณหรือคำเตือน เขาจึงเขียนกำหนดส่งมอบหลักฐานไว้บนผนึก เพื่อไม่ให้คำว่าภายหลังกลายเป็นเวลาอีกหลายปี",
+      "next_node": "a5_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_mid_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เสียงระฆังครั้งที่สิบสองดังยาวจนพื้นใต้เท้าสั่น น้ำในน้ำพุหยุดไหลขึ้นแล้วลอยนิ่งอยู่กลางอากาศ คนบางคนเรียกชื่อกันผิด ก่อนรีบขอโทษทั้งที่ไม่เข้าใจว่าทำไมชื่อนั้นจึงหลุดออกมาจากปาก",
+      "next_node": "a5_mid_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_mid_1": {
+      "type": "dialogue",
+      "speaker": "เนริน",
+      "text": "ถ้าฉันจำแม่ไม่ได้ แม่จะยังจำฉันได้ไหม? ถ้าทั้งสองคนลืมพร้อมกัน เราจะรู้ได้ยังไงว่าควรเดินกลับบ้านด้วยกัน… ฉันไม่อยากให้แม่ต้องตามหาฉันทั้งที่ยืนอยู่ตรงหน้า",
+      "next_node": "a5_mid_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_mid_2": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "เราจะให้คนอื่นช่วยจำด้วยนะ ไม่ต้องเป็นหน้าที่ของเธอคนเดียว ฉันจำชื่อเนรินได้ สุบารุก็จำได้ ลิออร่าก็อยู่ตรงนี้ ต่อให้เสียงในหัวเธอเงียบไปชั่วครู่ ก็ยังมีคนเรียกเธออยู่ข้างนอก",
+      "next_node": "a5_mid_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_mid_3": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "ประตูระบายน้ำเปิดค้าง ถ้าไปปิดด้วยมือจะลดแรงดันของวงแหวนได้ แต่ทางกลับอาจถูกหมอกปิด อีกทางคืออยู่บนลานและส่งสัญญาณให้เจ้าหน้าที่ทำตามจังหวะที่เราคำนวณไว้",
+      "next_node": "a5_mid_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_mid_4": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "นี่ไม่ใช่ตัวเลือกว่าฉันกล้าหรือไม่กล้า มันคือตัวเลือกว่าจะเอาความเสี่ยงไปวางตรงไหน ถ้าลงไปเอง คนอื่นต้องรอ ถ้าอยู่ที่นี่ ฉันต้องเชื่อใจคนที่อยู่ไกลจนมองไม่เห็น",
+      "next_node": "a5_mid_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_mid_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ออร์เวนหยิบเชือกเส้นใหม่ออกมา เส้นเดียวกับชนิดที่ขาดบนรถเข็นตอนเริ่มวัน เขาตรวจมันทีละช่วงต่อหน้าทุกคน แล้ววางลงอย่างช้า ๆ ครั้งนี้จะไม่มีใครถูกขอให้เชื่อว่าอุปกรณ์ปลอดภัยเพียงเพราะเขาพูดเช่นนั้น",
+      "next_node": "c10",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "c10": {
+      "type": "choice",
+      "text": "ใครจะจัดการประตูระบายน้ำ?",
+      "choices": [
+        {
+          "id": "c10_descend",
+          "text": "ลงไปปิดวาล์วเองโดยผูกเชือกนิรภัย",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "hp",
+              "amount": -12
+            },
+            {
+              "type": "player_stat",
+              "key": "courage",
+              "amount": 5
+            },
+            {
+              "type": "story_flag",
+              "key": "closed_valve",
+              "value": true
+            }
+          ],
+          "next_node": "a5_descend_0"
+        },
+        {
+          "id": "c10_coordinate",
+          "text": "ประสานงานกับเจ้าหน้าที่จากลานน้ำพุ",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "knowledge",
+              "amount": 3
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 5
+            },
+            {
+              "type": "story_flag",
+              "key": "coordinated_team",
+              "value": true
+            }
+          ],
+          "next_node": "a5_coordinate_0"
+        }
+      ]
+    },
+    "a5_descend_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ในอุโมงค์ เสียงเรียกจากข้างบนกลายเป็นเสียงคนที่สุบารุคิดถึง เขารู้ว่าไม่ควรหันไป แต่เท้าก็หยุดทุกครั้งที่ได้ยินชื่อตัวเอง เชือกที่เอวกระตุกสามครั้งตามสัญญาณที่ตกลงไว้ และช่วยให้เขาจำได้ว่ามาที่นี่เพื่ออะไร",
+      "next_node": "a5_descend_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_descend_1": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "วาล์วปิดแล้ว! ฉันตะโกนจนเจ็บคอ ไม่แน่ใจว่าใครได้ยินบ้าง เมื่อแรงดึงจากเชือกพาฉันกลับสู่ปากอุโมงค์ ฉันถึงรู้ว่าไม่ได้เป็นคนขึ้นมาด้วยตัวเอง ถึงจะลงไปคนเดียวก็เถอะ",
+      "next_node": "a6_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_coordinate_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "สุบารุส่งจังหวะผ่านนกหวีดทองแดง เจ้าหน้าที่สะพานตอบกลับจากปลายคลอง ทุกครั้งที่เสียงตอบช้ากว่าที่คิด เขาต้องห้ามตัวเองไม่ให้วิ่งลงไปแทรกแผน ในที่สุดแสงสีแดงบนหอคอยก็ดับลงหนึ่งแถว",
+      "next_node": "a5_coordinate_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a5_coordinate_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "เธอทำได้แล้ว การยืนรอฟังคำตอบจากคนอื่นบางครั้งก็ยากกว่าการวิ่งเข้าไปเองนะ ตอนนี้พวกเขารู้แล้วว่าสัญญาณของตัวเองมีคนฟังอยู่ ต่อให้เราต้องกลับลงไปข้างล่าง แผนก็ยังเดินต่อได้",
+      "next_node": "a6_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 05 — เมืองที่ต้องจำร่วมกัน"
+    },
+    "a6_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "วงแหวนกลางห้องกลไกหมุนช้าลง แต่ชื่อบนผนังกลับสว่างขึ้นทั้งหมด แสงไม่ได้อุ่นเหมือนตะเกียง มันซีดเหมือนกระดาษที่วางทิ้งไว้กลางแดดนานเกินไป ออร์เวนยืนหน้าช่องควบคุมโดยถอดเครื่องแบบช่างบำรุงออกแล้ว",
+      "next_node": "a6_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_1": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "ผมใส่ชื่อตัวเองแทนทะเบียนกลางได้ ระบบจะมีเจ้าของเพียงคนเดียว แล้วทุกคนก็ออกไปจากที่นี่ นี่เป็นความผิดที่ผมควรจ่าย ไม่จำเป็นต้องให้เด็กหรือคนแปลกหน้ารับไปด้วย",
+      "next_node": "a6_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_2": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "ถ้าคุณหายไป ใครจะบอกว่าระบบนี้ทำอะไรกับเมืองบ้าง? ฉันไม่ต้องการรูปปั้นคนเสียสละหน้าหอคอย ฉันต้องการพยานที่มีชีวิต มีชื่อ และต้องตอบคำถามของคนที่ได้รับผลกระทบ",
+      "next_node": "a6_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_3": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "การรับผิดชอบไม่จำเป็นต้องจบลงด้วยการทำให้ตัวเองหายไปนะ บางครั้งมันหมายถึงการอยู่ต่อ ทั้งที่รู้ว่าจะมีคนโกรธ และยังช่วยซ่อมสิ่งที่ทำเสียหายโดยไม่เรียกร้องให้เขาให้อภัย",
+      "next_node": "a6_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_4": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ฉันมองแผ่นทองเหลืองในมือออร์เวน แล้วนึกถึงทุกครั้งที่ตัวเองอยากแก้ปัญหาให้จบด้วยการรับมันไว้คนเดียว มันฟังเหมือนความกล้าหาญง่ายเหลือเกิน ถ้าไม่ต้องเป็นคนที่ถูกทิ้งให้ยืนอยู่หลังจากนั้น",
+      "next_node": "a6_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ลิออร่าถอดครอบแผงควบคุม ช่องวงแหวนสำรองยังว่างอยู่ ถ้าเอมิเลียเข้ามาช่วยประคองพลัง สุบารุจะมีเวลาปรับจังหวะมากขึ้น แต่หากเขาไม่ยอมแบ่งหน้าที่ ก็ต้องหมุนกลไกด้วยกำลังตัวเองจนกว่าระบบจะยอมตอบสนอง",
+      "next_node": "c11",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "c11": {
+      "type": "choice",
+      "text": "แผงควบคุมต้องใช้สองคนประสานจังหวะ",
+      "choices": [
+        {
+          "id": "c11_together",
+          "text": "ขอให้เอมิเลียช่วย และบอกความกลัวตามตรง",
+          "effects": [
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 8
+            },
+            {
+              "type": "story_flag",
+              "key": "asked_for_help",
+              "value": true
+            }
+          ],
+          "next_node": "a6_together_0"
+        },
+        {
+          "id": "c11_alone",
+          "text": "พยายามประคองระบบเอง เพื่อกันเธอออกจากอันตราย",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "hp",
+              "amount": -10
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": -6
+            },
+            {
+              "type": "story_flag",
+              "key": "acted_alone",
+              "value": true
+            }
+          ],
+          "next_node": "a6_alone_0"
+        }
+      ]
+    },
+    "a6_together_0": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ฉันกลัวว่าจะทำพลาด กลัวว่าถ้าบอกเธอ เธอจะเห็นว่าฉันไม่ได้เก่งอย่างที่พยายามแสดง… เพราะอย่างนั้นช่วยอยู่ตรงนี้หน่อยได้ไหม ไม่ใช่คอยดูฉัน แต่ช่วยทำมันด้วยกัน",
+      "next_node": "a6_together_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_together_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ได้สิ ฉันไม่ได้ตามมาถึงนี่เพื่อดูใครแสดงความเก่งสักหน่อย วางมือที่วงแหวนด้านซ้าย แล้วฟังเสียงฉัน ถ้าจังหวะไม่ตรง เราจะเริ่มใหม่พร้อมกัน ไม่ต้องรีบชดเชยความผิดพลาดด้วยการฝืนให้หนักกว่าเดิม",
+      "next_node": "a6_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_alone_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "สุบารุใช้ไหล่ดันคานควบคุม แรงสั่นทำให้บาดแผลเดิมเปิดอีกครั้ง เอมิเลียพยายามเรียก แต่เสียงของเธอปะปนกับเสียงจากผนัง เขาแยกไม่ออกว่าเสียงใดเป็นของคนที่อยู่ตรงหน้า และนั่นคือสิ่งที่เขากลัวมาตลอด",
+      "next_node": "a6_alone_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_alone_1": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "มองฉันก่อน! ฉันยังอยู่ตรงนี้ และฉันไม่ได้ขอให้เธอปลอดภัยแทนฉัน ฉันขอให้เธอยอมรับว่าฉันมีสิทธิ์ตัดสินใจด้วย อย่าทำให้คำว่าเพื่อฉันกลายเป็นเหตุผลที่เสียงฉันไม่มีความหมาย",
+      "next_node": "a6_mid_0",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_mid_0": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "มีสองวิธีที่ยังทำได้ วิธีแรกคือรักษาวงแหวนไว้แล้วคืนความทรงจำเป็นกลุ่ม ต้องมีข้อมูลกลไกเพียงพอและมีคนข้างบนช่วยยืนยันชื่อ วิธีที่สองคือตัดแกนกลาง ให้ระบบหยุดดึงคนใหม่เข้ามา แล้วค่อยช่วยผู้คนฟื้นความจำด้วยวิธีอื่น",
+      "next_node": "a6_mid_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_mid_1": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "ถ้าตัดแกน สำเนาบางส่วนจะหายไปตลอดกาล แต่ถ้าฝืนคืนข้อมูลโดยที่ยังแยกมันไม่ได้ เมืองอาจตื่นขึ้นพร้อมความทรงจำที่ดูสมบูรณ์แต่ไม่ใช่ของตัวเอง ผมเคยเลือกแทนทุกคนมาแล้ว ผมจะไม่ทำอย่างนั้นอีก",
+      "next_node": "a6_mid_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_mid_2": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เสียงจากลานดังลงมาตามท่อ บางเสียงอ่านชื่อจากกระดาษ บางเสียงถามว่าควรยืนตรงไหน คุณภาพของคำตอบที่มาถึงห้องกลไกเกิดจากสิ่งที่สุบารุทำไว้ตลอดคืน ไม่อาจสร้างขึ้นใหม่ทั้งหมดด้วยคำพูดในวินาทีสุดท้าย",
+      "next_node": "a6_mid_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_mid_3": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ไม่มีปุ่มที่เขียนว่าฉากจบดีที่สุดสินะ ฉันมีเพียงสิ่งที่รู้ คนที่ยอมยืนด้วยกัน และเรื่องที่เลือกจะบอกหรือไม่บอกมาตลอดทาง ถ้าจะตัดสินใจตอนนี้ ก็ต้องยอมรับทั้งหมดนั้นด้วย",
+      "next_node": "a6_mid_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_mid_4": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ไม่ว่าจะเลือกวิธีไหน อย่าพูดว่ามันจะไม่เจ็บเลยนะ เราสัญญาแบบนั้นแทนทุกคนไม่ได้ แต่เราสัญญาได้ว่าจะไม่หนีไปหลังจากทำเสร็จ และจะฟังคนที่ต้องอยู่กับผลของมัน",
+      "next_node": "a6_mid_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "a6_mid_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เข็มระฆังเคลื่อนเข้าใกล้รอยบากสุดท้าย แผ่นทองเหลืองอุ่นขึ้นในมือสุบารุ เป็นครั้งแรกของคืนนี้ที่ไม่มีใครแย่งคำตอบไปจากเขา แต่ก็ไม่มีใครปล่อยให้เขาเชื่อว่าคำตอบนั้นเกิดขึ้นจากเขาเพียงคนเดียว",
+      "next_node": "c12",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ตอนที่ 06 — ก่อนระฆังครั้งที่สิบสาม"
+    },
+    "c12": {
+      "type": "choice",
+      "text": "คุณจะยุติวิกฤตของหอระฆังด้วยวิธีใด?",
+      "choices": [
+        {
+          "id": "c12_restore",
+          "text": "รักษาวงแหวนและพยายามคืนความทรงจำตามหลักฐาน",
+          "effects": [
+            {
+              "type": "story_flag",
+              "key": "chose_restoration",
+              "value": true
+            }
+          ],
+          "next_node": "ending_knowledge"
+        },
+        {
+          "id": "c12_cut",
+          "text": "ตัดแกนกลาง หยุดระบบและยอมรับสิ่งที่กู้คืนไม่ได้",
+          "effects": [
+            {
+              "type": "story_flag",
+              "key": "chose_shutdown",
+              "value": true
+            }
+          ],
+          "next_node": "ending_trust"
+        }
+      ]
+    },
+    "ending_knowledge": {
+      "type": "condition",
+      "condition": {
+        "type": "stat",
+        "key": "knowledge",
+        "gte": 18
+      },
+      "if_true": "ending_evidence",
+      "if_false": "ending_borrowed_0"
+    },
+    "ending_evidence": {
+      "type": "condition",
+      "condition": {
+        "type": "flag",
+        "key": "distributed_records",
+        "value": true
+      },
+      "if_true": "ending_names_0",
+      "if_false": "ending_borrowed_0"
+    },
+    "ending_trust": {
+      "type": "condition",
+      "condition": {
+        "type": "relationship",
+        "character": "emilia",
+        "key": "trust",
+        "gte": 20
+      },
+      "if_true": "ending_dawn_0",
+      "if_false": "ending_solitary_0"
+    },
+    "ending_names_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ฉากจบ — เมืองที่เรียกชื่อกันอีกครั้ง",
+      "next_node": "ending_names_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 01 — เมืองที่เรียกชื่อกันอีกครั้ง"
+    },
+    "ending_names_1": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "กลุ่มแรกตอบแล้ว กลุ่มที่สองรอก่อน อย่าส่งชื่อที่ยังไม่มีพยานลงไป สุบารุ หมุนตามจังหวะที่จดไว้ทีละช่อง ไม่ต้องรีบ เสียงข้างบนกำลังตามเราทัน",
+      "next_node": "ending_names_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 01 — เมืองที่เรียกชื่อกันอีกครั้ง"
+    },
+    "ending_names_2": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "แสงบนผนังไหลกลับไปตามเส้นวงจรทีละสาย คนบนลานไม่ได้ร้องเรียกพร้อมกัน แต่ผลัดกันเล่าเรื่องของบ้าน ร้านค้า และคนที่นั่งกินข้าวร่วมโต๊ะ เมื่อเรื่องหนึ่งไม่ตรงกัน พวกเขาหยุดถามแทนการลบมันออก",
+      "next_node": "ending_names_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 01 — เมืองที่เรียกชื่อกันอีกครั้ง"
+    },
+    "ending_names_3": {
+      "type": "dialogue",
+      "speaker": "เนริน",
+      "text": "แม่จำได้ว่ารองเท้าข้างซ้ายของฉันหลวม แต่ยังจำไม่ได้ว่าใครเป็นคนเย็บ ไม่เป็นไรใช่ไหม? ฉันเล่าให้แม่ฟังใหม่ได้ คราวนี้ฉันจะไม่รีบเล่าจนแม่ตามไม่ทัน",
+      "next_node": "ending_names_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 01 — เมืองที่เรียกชื่อกันอีกครั้ง"
+    },
+    "ending_names_4": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "เธอเห็นไหม เราไม่ได้เอาเมืองทั้งเมืองออกมาจากเครื่องจักรด้วยกันแค่สองคน ทุกคนช่วยดึงส่วนของตัวเองกลับมา ฉันดีใจที่เธอยอมให้หลักฐานเดินออกจากมือเราไปหาคนที่ควรได้อ่านมัน",
+      "next_node": "ending_names_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ฉากจบ 01 — เมืองที่เรียกชื่อกันอีกครั้ง"
+    },
+    "ending_names_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ออร์เวนส่งมอบกุญแจต่อหน้าพยานและอยู่ตอบคำถามจนเช้า ไม่มีใครประกาศให้อภัยเขา และไม่มีใครลบชื่อเขาออกจากเรื่องที่เกิดขึ้น หอจดหมายเหตุเปิดหน้าต่างทุกบานเพื่อรับคนที่มีข้อมูลมาเพิ่ม",
+      "next_node": "ending_names_6",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 01 — เมืองที่เรียกชื่อกันอีกครั้ง"
+    },
+    "ending_names_6": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ก่อนออกจากลาน ฉันเห็นกระดาษแผ่นหนึ่งเขียนชื่อฉันผิดไปตัวเดียว ฉันหัวเราะแล้วช่วยแก้ให้ ไม่ใช่เพราะกลัวจะหายไป แต่เพราะตอนนี้ฉันรู้ว่ามีใครบางคนพยายามจำชื่อฉันอยู่จริง ๆ",
+      "next_node": "ending_names_7",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 01 — เมืองที่เรียกชื่อกันอีกครั้ง"
+    },
+    "ending_names_7": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ระฆังยามเช้าดังตามเวลา ยังมีคนที่ต้องตามหา และความทรงจำที่ต้องตรวจสอบ แต่สิทธิ์ในการเล่าเรื่องของเมืองไม่ได้อยู่ในมือคนดูแลหอคอยเพียงคนเดียวอีกต่อไป — จบบทนำ: ระฆังครั้งที่สิบสาม",
+      "next_node": "",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 01 — เมืองที่เรียกชื่อกันอีกครั้ง"
+    },
+    "ending_dawn_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ฉากจบ — รุ่งเช้าของผู้ที่ยังอยู่",
+      "next_node": "ending_dawn_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 02 — รุ่งเช้าของผู้ที่ยังอยู่"
+    },
+    "ending_dawn_1": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "พร้อมนะ? ฉันถามทั้งที่รู้ว่าไม่มีใครพร้อมเสียทุกอย่างที่อยู่ในวงแหวน เอมิเลียวางมือบนคานอีกด้านแล้วพยักหน้า เธอไม่ได้บอกว่านี่เป็นทางที่ไม่เจ็บ แต่ยืนยันว่าจะไม่ปล่อยมือกลางทาง",
+      "next_node": "ending_dawn_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 02 — รุ่งเช้าของผู้ที่ยังอยู่"
+    },
+    "ending_dawn_2": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "แกนกลางแตกด้วยเสียงเบากว่าที่คิด แสงดับจากผนังทีละชื่อ ก่อนแรงสั่นทั้งหมดจะหยุดลง เสียงของเมืองกลับมาเป็นเสียงธรรมดา เสียงร้องไห้ เสียงเรียกหากัน และเสียงคนบอกทางออกให้คนที่ยืนใกล้ที่สุด",
+      "next_node": "ending_dawn_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 02 — รุ่งเช้าของผู้ที่ยังอยู่"
+    },
+    "ending_dawn_3": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "เรายังมีสิ่งที่คนจำได้จริง มีสำเนาที่เก็บไว้ มีคำบอกเล่าที่ไม่ผ่านเครื่องจักร ฉันจะเริ่มทะเบียนใหม่ แต่ครั้งนี้จะเว้นพื้นที่ให้เขียนว่าไม่ทราบด้วย การยอมรับช่องว่างดีกว่าปั้นคำตอบขึ้นมาแทนใคร",
+      "next_node": "ending_dawn_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 02 — รุ่งเช้าของผู้ที่ยังอยู่"
+    },
+    "ending_dawn_4": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "เธอไม่ต้องพูดว่าช่วยทุกคนได้หรอก ฉันเห็นว่าเราช่วยใครไว้บ้าง และเห็นว่าเราช่วยใครไม่ทันด้วย เราจะจำทั้งสองอย่าง โดยไม่ใช้ด้านหนึ่งลบอีกด้านออก",
+      "next_node": "ending_dawn_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ฉากจบ 02 — รุ่งเช้าของผู้ที่ยังอยู่"
+    },
+    "ending_dawn_5": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "บนลานน้ำพุ ผู้คนผูกริบบิ้นเปล่าไว้สำหรับชื่อที่ยังค้นหาไม่พบ ออร์เวนเป็นคนปีนขึ้นไปแขวนเส้นแรกด้วยมือตัวเอง ไม่มีเสียงปรบมือ แต่เจ้าหน้าที่ส่งบันไดให้เขาอย่างมั่นคง",
+      "next_node": "ending_dawn_6",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 02 — รุ่งเช้าของผู้ที่ยังอยู่"
+    },
+    "ending_dawn_6": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ฉันเคยคิดว่าการเป็นคนสำคัญต้องมีคำตอบในตอนจบ แต่เช้าวันนั้น สิ่งที่ฉันทำได้คือเดินข้างคนคนหนึ่ง ช่วยเธอถือสมุดที่ยังเขียนไม่เสร็จ และถามว่าหน้าถัดไปเราจะเริ่มจากใคร",
+      "next_node": "ending_dawn_7",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 02 — รุ่งเช้าของผู้ที่ยังอยู่"
+    },
+    "ending_dawn_7": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ระฆังจะยังเงียบไปอีกระยะ เมืองใช้เสียงเรียกของผู้คนแทนสัญญาณเวลา ความสูญเสียไม่ได้หายไป แต่ไม่มีใครต้องแบกมันโดยไม่มีชื่อเรียกหรือมืออีกข้างให้จับ — จบบทนำ: ระฆังครั้งที่สิบสาม",
+      "next_node": "",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 02 — รุ่งเช้าของผู้ที่ยังอยู่"
+    },
+    "ending_solitary_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ฉากจบ — ผู้เฝ้าประตูเพียงลำพัง",
+      "next_node": "ending_solitary_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 03 — ผู้เฝ้าประตูเพียงลำพัง"
+    },
+    "ending_solitary_1": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "สุบารุดันคานจนกลไกหลุดจากร่อง แกนกลางแตกและประตูนิรภัยตกลงมาคั่นห้อง เอมิเลียอยู่คนละฝั่ง เธอเรียกชื่อเขาซ้ำ แต่ความไม่ไว้ใจที่สะสมมาตลอดคืนทำให้ทั้งคู่เสียเวลาสำคัญไปกับการเดาว่าอีกคนกำลังทำอะไร",
+      "next_node": "ending_solitary_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 03 — ผู้เฝ้าประตูเพียงลำพัง"
+    },
+    "ending_solitary_2": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ฉันยังอยู่! ไม่ต้องพังประตู ฉันหาทางออกได้ เสียงตัวเองฟังมั่นใจเหมือนทุกครั้งที่ผ่านมา และครั้งนี้ฉันเกลียดมัน เพราะสิ่งที่อยากพูดจริง ๆ คือฉันมองไม่เห็นทางและอยากให้เธออยู่ฟัง",
+      "next_node": "ending_solitary_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 03 — ผู้เฝ้าประตูเพียงลำพัง"
+    },
+    "ending_solitary_3": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "กว่าจะเปิดประตูบริการได้ ท้องฟ้าก็เริ่มสว่าง เมืองรอดจากการดึงชื่อครั้งใหม่ แต่รายชื่อในวงแหวนสูญหายไปพร้อมกับคำตอบหลายอย่าง สุบารุออกมาพร้อมกุญแจสองดอกที่เปิดอะไรไม่ได้แล้ว",
+      "next_node": "ending_solitary_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 03 — ผู้เฝ้าประตูเพียงลำพัง"
+    },
+    "ending_solitary_4": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ฉันดีใจที่เธอกลับมา แต่เราไม่สามารถทำงานด้วยกันโดยต้องเดาความจริงจากคำพูดของกันและกันได้ทุกครั้ง วันนี้พักก่อนเถอะ แล้วถ้าเธอพร้อมจะเล่าตรง ๆ ค่อยมาคุยกันใหม่",
+      "next_node": "ending_solitary_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ฉากจบ 03 — ผู้เฝ้าประตูเพียงลำพัง"
+    },
+    "ending_solitary_5": {
+      "type": "dialogue",
+      "speaker": "ลิออร่า",
+      "text": "ฉันจะเก็บคำให้การของทุกคน รวมถึงเธอด้วย แต่เธอต้องยอมให้มันอยู่ข้างคำให้การที่ไม่เห็นด้วยนะ เรื่องนี้ไม่มีใครควรมีสิทธิ์เขียนตอนจบเพียงคนเดียว แม้จะเป็นคนที่ทำให้เครื่องหยุดลงก็ตาม",
+      "next_node": "ending_solitary_6",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 03 — ผู้เฝ้าประตูเพียงลำพัง"
+    },
+    "ending_solitary_6": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "สุบารุช่วยเก็บเศษกระจกจากลานจนคนสุดท้ายกลับบ้าน ไม่มีใครขับไล่เขา และไม่มีใครรู้ว่าควรชวนเขาไปที่ไหน การอยู่ลำพังไม่ได้เกิดจากประตูที่ปิดเสมอไป บางครั้งเกิดจากการไม่เคยยื่นกุญแจให้อีกคน",
+      "next_node": "ending_solitary_7",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 03 — ผู้เฝ้าประตูเพียงลำพัง"
+    },
+    "ending_solitary_7": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เมืองมีวันพรุ่งนี้ แต่ความสัมพันธ์ที่เสียหายต้องเริ่มซ่อมจากคำพูดธรรมดา ไม่ใช่การเสียสละครั้งใหญ่ กุญแจสองดอกถูกวางไว้บนโต๊ะหอจดหมายเหตุ พร้อมข้อความสั้น ๆ ว่า ฉันอยากเล่าเรื่องทั้งหมด — จบบทนำ: ระฆังครั้งที่สิบสาม",
+      "next_node": "",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 03 — ผู้เฝ้าประตูเพียงลำพัง"
+    },
+    "ending_borrowed_0": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ฉากจบ — รุ่งเช้าที่ยืมมา",
+      "next_node": "ending_borrowed_1",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 04 — รุ่งเช้าที่ยืมมา"
+    },
+    "ending_borrowed_1": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "วงแหวนเริ่มหมุนอีกครั้งและส่งแสงขึ้นไปตามท่อ ชื่อบนผนังหายไปอย่างรวดเร็วเกินกว่าจะอ่าน ลิออร่าขอให้รอการยืนยันจากข้างบน แต่เสียงระฆังกลบคำเตือนนั้นจนหมด สุบารุเห็นเพียงเข็มที่กลับมาชี้ตรงเวลา",
+      "next_node": "ending_borrowed_2",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 04 — รุ่งเช้าที่ยืมมา"
+    },
+    "ending_borrowed_2": {
+      "type": "dialogue",
+      "speaker": "ออร์เวน",
+      "text": "หยุดการส่งไม่ได้แล้ว ถ้าดึงคานตอนนี้ ข้อมูลที่ค้างอยู่จะย้อนเข้าห้องทั้งหมด… ผมขอโทษ ผมควรบอกตั้งแต่แรกว่าการทำให้ระบบเดินต่อไม่ได้แปลว่าเรารู้ว่ามันกำลังพาใครไปที่ไหน",
+      "next_node": "ending_borrowed_3",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 04 — รุ่งเช้าที่ยืมมา"
+    },
+    "ending_borrowed_3": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เช้าวันต่อมา ร้านค้าทุกร้านเปิดตามปกติ ผู้คนเรียกชื่อกันได้ถูกต้อง ไม่มีใครถามเรื่องป้ายที่หายไป ทว่าหญิงชราริมคลองเริ่มใส่หัวหอมในอาหารจานที่เคยบอกว่าสามีเกลียด และยืนยันว่าเขาชอบมันมาตลอด",
+      "next_node": "ending_borrowed_4",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 04 — รุ่งเช้าที่ยืมมา"
+    },
+    "ending_borrowed_4": {
+      "type": "dialogue",
+      "speaker": "เนริน",
+      "text": "แม่จำฉันได้แล้วค่ะ แต่แม่บอกว่าฉันไม่เคยกลัวน้ำ ฉันก็เลยไม่ได้เล่าเรื่องสะพาน ถ้าแม่มีความสุขแล้ว บางทีฉันอาจจำผิดเองก็ได้… ใช่ไหมคะ?",
+      "next_node": "ending_borrowed_5",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 04 — รุ่งเช้าที่ยืมมา"
+    },
+    "ending_borrowed_5": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "อย่าเพิ่งทิ้งสมุดของเรานะ บางอย่างอาจกลับมาไม่ตรงที่เดิม ฉันไม่อยากกล่าวหาความทรงจำของใครว่าเป็นของปลอม แต่ฉันก็ไม่อยากบอกเด็กว่าต้องเลิกเชื่อประสบการณ์ของตัวเองเพื่อให้เมืองดูสงบ",
+      "next_node": "ending_borrowed_6",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "chapter_title": "ฉากจบ 04 — รุ่งเช้าที่ยืมมา"
+    },
+    "ending_borrowed_6": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "ลิออร่าผูกเชือกรอบเอกสารอีกครั้ง คราวนี้เธอเขียนบนปกว่า สิ่งที่ยังต้องตรวจสอบ สุบารุยืนฟังระฆังยามเช้า มันดังถูกจำนวน แต่ระหว่างเสียงครั้งที่หกกับครั้งที่เจ็ด เขาได้ยินเสียงคนเคาะประตูจากที่ที่ไม่มีอาคารอยู่",
+      "next_node": "ending_borrowed_7",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 04 — รุ่งเช้าที่ยืมมา"
+    },
+    "ending_borrowed_7": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "เมืองได้รับวันพรุ่งนี้ที่ดูสมบูรณ์ และหนี้ที่ยังไม่มีใครยอมเรียกชื่อ ความสงบครั้งนี้อาจอยู่ได้นาน ตราบเท่าที่ไม่มีใครถามว่าความทรงจำซึ่งทำให้ตนมีความสุขนั้นเคยเป็นของใคร — จบบทนำ: ระฆังครั้งที่สิบสาม",
+      "next_node": "",
+      "background": "res://assets/backgrounds/dusk.svg",
+      "portrait": "",
+      "chapter_title": "ฉากจบ 04 — รุ่งเช้าที่ยืมมา"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "chapter_id": "chapter_01",
+  "start_node": "start",
+  "nodes": {
+    "start": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "แสงสุดท้ายทอดผ่านถนนที่ไม่คุ้นเคย เสียงระฆังดังขึ้นจากอีกฟากของเมือง",
+      "next_node": "arrival",
+      "portrait": "",
+      "background": "res://assets/backgrounds/dusk.svg"
+    },
+    "arrival": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ที่นี่คือที่ไหนกัน… เมื่อกี้ฉันยังเดินอยู่บนถนนอีกสายหนึ่งแท้ ๆ",
+      "next_node": "meeting",
+      "portrait": "",
+      "background": "res://assets/backgrounds/dusk.svg"
+    },
+    "meeting": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "เธอดูหลงทางนะ ถ้ากำลังหาทางไปลานกลางเมือง ฉันเดินไปด้วยได้",
+      "next_node": "reply",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "background": "res://assets/backgrounds/dusk.svg"
+    },
+    "reply": {
+      "type": "dialogue",
+      "speaker": "สุบารุ",
+      "text": "ขอบคุณนะ ฉันมีเรื่องอยากถามเยอะเลย แต่เริ่มจากชื่อของเธอก่อนก็แล้วกัน",
+      "next_node": "end",
+      "portrait": "",
+      "background": "res://assets/backgrounds/dusk.svg"
+    },
+    "end": {
+      "type": "dialogue",
+      "speaker": "เอมิเลีย",
+      "text": "ฉันชื่อเอมิเลีย ไปกันเถอะ ก่อนที่แสงไฟบนถนนจะดับลง",
+      "next_node": "decision",
+      "portrait": "res://assets/characters/portrait_placeholder.svg",
+      "background": "res://assets/backgrounds/dusk.svg"
+    },
+    "decision": {
+      "type": "choice",
+      "choices": [
+        {
+          "id": "choice_help_emilia",
+          "text": "เข้าไปช่วยเอมิเลีย",
+          "effects": [
+            {
+              "type": "player_stat",
+              "key": "hp",
+              "amount": -10
+            },
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": 10
+            },
+            {
+              "type": "story_flag",
+              "key": "helped_emilia",
+              "value": true
+            }
+          ],
+          "next_node": "helped"
+        },
+        {
+          "id": "choice_observe_emilia",
+          "text": "ถอยไปสังเกตจากระยะปลอดภัย",
+          "effects": [
+            {
+              "type": "relationship",
+              "character": "emilia",
+              "key": "trust",
+              "amount": -5
+            },
+            {
+              "type": "story_flag",
+              "key": "observed_emilia",
+              "value": true
+            }
+          ],
+          "next_node": "observed"
+        }
+      ],
+      "text": "เสียงฝีเท้าเร่งเข้ามาจากตรอกมืด คุณจะทำอย่างไร?"
+    },
+    "helped": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "คุณดึงเอมิเลียหลบพ้นทางรถม้า แขนของคุณถลอกเล็กน้อย เธอหันมาขอบคุณด้วยน้ำเสียงที่ผ่อนคลายลง\n\nผลลัพธ์: จุดเริ่มต้นของความไว้วางใจ",
+      "next_node": "",
+      "portrait": "",
+      "background": "res://assets/backgrounds/dusk.svg"
+    },
+    "observed": {
+      "type": "dialogue",
+      "speaker": "ผู้บรรยาย",
+      "text": "คุณถอยเข้าข้างทางและจดจำทิศทางที่คนแปลกหน้าวิ่งจากไป เอมิเลียปลอดภัย แต่ยังมองคุณด้วยความลังเล\n\nผลลัพธ์: ผู้เฝ้ามองในเงามืด",
+      "next_node": "",
+      "portrait": "",
+      "background": "res://assets/backgrounds/dusk.svg"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PASS: Initial HP/history
+PASS: Initial relationship/flag
+PASS: Baseline help changes HP/trust
+PASS: Baseline flag/history
+PASS: Upper trust/lower HP clamps
+PASS: Lower trust clamp
+PASS: Max HP cannot be negative
+PASS: HP respects maximum
+PASS: Snapshot uses deep copy
+PASS: New game restores defaults
+PASS: First dialogue/typewriter starts
+PASS: Typewriter progresses without replacing Thai text
+PASS: First continue reveals only
+PASS: Full text is preserved during reveal
+PASS: Second continue updates story and GameState
+PASS: Bundled font contains Thai consonant, tone mark and Latin
+PASS: Keyboard Space advances exactly once
+PASS: Portrait and background loaded
+PASS: Mouse-button signal advances and clears prior portrait
+PASS: Choice UI presents both options
+PASS: Continue cannot bypass choices
+PASS: Save before choice
+PASS: Help route applies effects and branches
+PASS: Real choice recorded once
+PASS: Stale/double selection rejected
+PASS: Load restores pre-choice state atomically
+PASS: Observe route differs from help
+PASS: Ending completes once; extra input is ignored
+PASS: Save completed route and retain backup
+PASS: Load completed route without replaying effects
+PASS: History round trip
+PASS: Corrupted primary recovers previous valid backup
+PASS: Both files corrupt: reject without modifying live state
+PASS: Missing optional save fields receive defaults
+PASS: Unknown save version rejected
+PASS: Wrong numeric types rejected
+PASS: Missing saved node rejected
+PASS: Completed marker invalid at a choice node
+PASS: Invalid story destination rejected transactionally
+PASS: Unknown effect type rejected before gameplay
+PASS: Non-object story rejected safely
+PASS: Missing story file reported safely
+PASS: New save repairs corrupted files
+RESULT: 43 checks, 0 failures
+
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+CAMPAIGN: 4096 routes; 164/164 visible nodes; 4 endings; 104-104 dialogue pages per playthrough; 0 failures
+Ending distribution: { "ending_borrowed_7": 1440, "ending_names_7": 608, "ending_dawn_7": 1206, "ending_solitary_7": 842 }
+PASS: condition cycles stop with a readable error
+
+PASS: wrote campaign save in first process
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+PASS: separate process restored campaign node, HP and choice exactly once
